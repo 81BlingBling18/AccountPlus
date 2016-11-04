@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/detail_item_height">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar_green" />
+    <TextView
+        android:id="@+id/circle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_shape_small" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/detail_small_text_size"
+        android:text="29日"/>
+    <TextView
+        android:id="@+id/income_text"
+        android:text="@string/income"
+        android:textSize="@dimen/detail_income_outcome_textsize"
+        android:textColor="@color/toolbar_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/circle"
+        android:paddingRight="15dp"/>
+    <TextView
+        android:id="@+id/outcome_text"
+        android:text="@string/outcome"
+        android:textSize="@dimen/detail_income_outcome_textsize"
+        android:textColor="@color/toolbar_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circle"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/detail_small_text_size"
+        android:textColor="@color/text_gray"
+        android:text="100"
+        android:layout_toLeftOf="@id/income_text"
+        android:paddingRight="@dimen/detail_small_text_size"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/outcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/detail_small_text_size"
+        android:textColor="@color/text_gray"
+        android:layout_toRightOf="@id/outcome_text"
+        android:paddingLeft="@dimen/detail_small_text_size"
+        android:text="100"
+        android:layout_centerVertical="true"/>
+    <View
+        android:layout_width="@dimen/detail_line_width"
+        android:layout_height="1dp"
+        android:background="@color/toolbar_green"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:layout_alignParentLeft="true"/>
+    <View
+        android:layout_width="@dimen/detail_line_width"
+        android:layout_height="1dp"
+        android:background="@color/toolbar_green"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"/>
+
+</RelativeLayout>

@@ -2,4 +2,17 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="base_toolbar_height">50dp</dimen>
+    <dimen name="wave_view_diameter">90dp</dimen>
+    <dimen name="account_list_to_top">80dp</dimen>
+    <dimen name="detail_item_height">77dp</dimen>
+    <dimen name="detail_small_text_size">10dp</dimen>
+    <dimen name="detail_income_outcome_textsize">14sp</dimen>
+    <dimen name="detail_line_width">40dp</dimen>
+    <dimen name="detail_avatar_size">45dp</dimen>
+    <dimen name="detail_message_height">60dp</dimen>
+    <dimen name="detail_message_width">142dp</dimen>
+    <dimen name="detail_type_and_money_text_size">13sp</dimen>
+    <dimen name="detail_remark_text_size">10sp</dimen>
+
 </resources>

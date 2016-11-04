@@ -1,3 +1,33 @@
 <resources>
+    <!-- income and outcome-->
     <string name="app_name">AccountPlus</string>
+    <string name="income_january">1月收入</string>
+    <string name="income_february">2月收入</string>
+    <string name="income_march">3月收入</string>
+    <string name="income_april">4月收入</string>
+    <string name="income_may">5月收入</string>
+    <string name="income_june">6月收入</string>
+    <string name="income_july">7月收入</string>
+    <string name="income_august">8月收入</string>
+    <string name="income_september">9月收入</string>
+    <string name="income_october">10月收入</string>
+    <string name="income_november">11月收入</string>
+    <string name="income_december">12月收入</string>
+
+    <string name="outcome_january">1月支出</string>
+    <string name="outcome_february">2月支出</string>
+    <string name="outcome_march">3月支出</string>
+    <string name="outcome_april">4月支出</string>
+    <string name="outcome_may">5月支出</string>
+    <string name="outcome_june">6月支出</string>
+    <string name="outcome_july">7月支出</string>
+    <string name="outcome_august">8月支出</string>
+    <string name="outcome_september">9月支出</string>
+    <string name="outcome_october">10月支出</string>
+    <string name="outcome_november">11月支出</string>
+    <string name="outcome_december">12月支出</string>
+
+    <string name="remained_budget">预算剩余</string>
+    <string name="income">收入</string>
+    <string name="outcome">支出</string>
 </resources>

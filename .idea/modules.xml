@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AccountPlus.iml" filepath="$PROJECT_DIR$/AccountPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wavekit/wavekit.iml" filepath="$PROJECT_DIR$/wavekit/wavekit.iml" />
     </modules>
   </component>
 </project>

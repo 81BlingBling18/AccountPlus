@@ -14,5 +14,6 @@
     <dimen name="detail_message_width">142dp</dimen>
     <dimen name="detail_type_and_money_text_size">13sp</dimen>
     <dimen name="detail_remark_text_size">10sp</dimen>
+    <dimen name="bottom_bar_height">52dp</dimen>
 
 </resources>

@@ -5,9 +5,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.happycoding.uniquehust.accountplus.details.MainActivity">
 
@@ -72,5 +69,35 @@
 
     </android.support.v7.widget.RecyclerView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_toolbar_height"
+        android:background="@color/dark_blue"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/diagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="图表"/>
+
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="明细"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         />
 
 </RelativeLayout>

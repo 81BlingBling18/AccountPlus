@@ -1,11 +1,14 @@
 package com.happycoding.uniquehust.accountplus.add_item;
 
+import android.app.Activity;
 import android.app.Application;
+
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 

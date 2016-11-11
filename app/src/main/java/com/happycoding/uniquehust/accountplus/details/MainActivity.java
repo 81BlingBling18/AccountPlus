@@ -3,14 +3,16 @@ package com.happycoding.uniquehust.accountplus.details;
 import android.content.Intent;
 import android.icu.util.Calendar;
 import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.happycoding.uniquehust.accountplus.R;
 import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
 import com.happycoding.uniquehust.accountplus.add_item.AddEditAccountActivity;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
@@ -18,10 +20,6 @@ import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
-
-import com.happycoding.uniquehust.accountplus.R;
-
-import org.w3c.dom.Text;
 
 import java.util.Date;
 

@@ -5,21 +5,28 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="15"
         android:targetSdkVersion="25" />
 
     <application
+        android:name="com.happycoding.uniquehust.accountplus.global.AccountPlusApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.happycoding.uniquehust.accountplus.MainActivity" >
+        <activity android:name="com.happycoding.uniquehust.accountplus.details.Main2Activity" />
+        <activity
+            android:name="com.happycoding.uniquehust.accountplus.details.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.happycoding.uniquehust.accountplus.details.AccountEditActivity" >
         </activity>
     </application>
 

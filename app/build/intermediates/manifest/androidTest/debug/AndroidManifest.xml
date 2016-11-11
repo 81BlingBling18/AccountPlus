@@ -3,7 +3,7 @@
     package="com.happycoding.uniquehust.accountplus.test" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="15"
         android:targetSdkVersion="25" />
 
     <instrumentation

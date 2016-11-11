@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="toolbar_green">#59B390</color>
+    <color name="toolbar_green_light">#ACD9C8</color>
+    <color name="text_gray">#8A959B</color>
+    <color name="text_red">#E27D61</color>
+    <color name="dark_blue">#162B3C</color>
 </resources>

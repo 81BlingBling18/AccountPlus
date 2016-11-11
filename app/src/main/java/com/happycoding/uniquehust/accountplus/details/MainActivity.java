@@ -1,6 +1,8 @@
 package com.happycoding.uniquehust.accountplus.details;
 
+import android.content.Intent;
 import android.icu.util.Calendar;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
+import com.happycoding.uniquehust.accountplus.add_item.AddEditAccountActivity;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.global.Lg;
@@ -24,6 +27,7 @@ import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.month_outcome)TextView monthOutcome;
     @BindView(R.id.income_number)TextView income_Number;
     @BindView(R.id.outcome_number) TextView outcomeNumber;
+    @OnClick(R.id.add)
+    void startAdd(){
+        Intent intent = new Intent(AccountPlusApp.getInstance().getApplicationContext(), AddEditAccountActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
         budget.setMax(100);
         budget.setProgress(50);
         Date date = new Date();
-        Log.d("holo",date.getTime() + "shijian ");
-        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
-                , 12345678,2232982,66666);
+        AccountItem item = new AccountItem(AccountPlusApp.TYPE_OUTCOME,"写作业",20,"好想写作业啊"
+                , new Date().getTime(),2232982,66666);
+        DatabaseHelper.add(item);
         DatabaseHelper.add(item);
         account_list.setLayoutManager(new LinearLayoutManager(this));
         account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));

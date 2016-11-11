@@ -7,7 +7,7 @@ public final class AccountDatabaseContract {
 
     public static abstract class AccountEntry implements BaseColumns {
         public static final String TABLE_NAME = "account";
-        public static final String COLUMN_NAME_TYPE = "TYPE";
+        public static final String COLUMN_NAME_TYPE = "type";
         public static final String COLUMN_NAME_TITLE = "title";
         public static final String COLUMN_NAME_AMOUNT = "amount";
         public static final String COLUMN_NAME_DESCRIPTION = "description";

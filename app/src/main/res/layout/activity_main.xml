@@ -8,6 +8,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.happycoding.uniquehust.accountplus.details.MainActivity">
 
+    <View
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_toolbar_height"
+        android:background="@color/dark_blue"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/account_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/account_list_to_top"
+        android:layout_above="@id/bottom_bar">
+
+    </android.support.v7.widget.RecyclerView>
     <com.yuan.waveview.WaveView
         android:id="@+id/budget_message"
         android:layout_width="@dimen/wave_view_diameter"
@@ -60,20 +75,6 @@
         android:layout_toRightOf="@id/budget_message"
         android:layout_marginLeft="30dp"
         android:text="0"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/account_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/account_list_to_top">
-
-    </android.support.v7.widget.RecyclerView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/base_toolbar_height"
-        android:background="@color/dark_blue"
-        android:layout_alignParentBottom="true"/>
 
     <Button
         android:id="@+id/add"

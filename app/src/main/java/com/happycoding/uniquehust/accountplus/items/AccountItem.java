@@ -12,6 +12,7 @@ public class AccountItem {
     private long timeStamp;
     private long picTimeStamp;
     private int iconID;
+    private String date;
 
     public AccountItem(int type, String title, double amount, String description, long timeStamp, long picTimeStamp, int iconID) {
         this.type = type;
@@ -27,6 +28,13 @@ public class AccountItem {
 
     }
 
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDate() {
+        return date;
+    }
     public int getType() {
         return type;
     }

@@ -10,6 +10,7 @@ public class AccountPlusApp extends Application {
     private static AccountPlusApp accountPlusApp = null;
     public static final int TYPE_INCOME = 1;
     public static final int TYPE_OUTCOME = 0;
+    public static final int TYPE_DAY_BEGIN = 2;
 
     @Override
     public void onCreate() {

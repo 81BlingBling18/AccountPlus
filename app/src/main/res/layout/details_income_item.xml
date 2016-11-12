@@ -1,74 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/detail_item_height">
+
     <View
         android:id="@+id/line"
         android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/toolbar_green"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="@dimen/detail_item_height"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar_green" />
+
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_shape_large"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"/>
+        android:background="@drawable/circle_shape_large" />
 
     <ImageView
         android:id="@+id/picture"
         android:layout_width="@dimen/detail_avatar_size"
         android:layout_height="@dimen/detail_avatar_size"
-        android:background="@mipmap/ic_launcher"
-        android:layout_marginRight="20dp"
-        android:layout_toLeftOf="@id/icon"/>
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/icon"
+        android:background="@mipmap/ic_launcher" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="edit"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:text="edit" />
+
     <Button
         android:id="@+id/delete"
-        android:text="delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:text="delete" />
+
     <android.support.v7.widget.CardView
         android:id="@+id/income_message"
         android:layout_width="@dimen/detail_message_width"
         android:layout_height="@dimen/detail_message_height"
-        android:layout_toRightOf="@id/line"
-        android:layout_marginLeft="23dp"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="5dp">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/type_and_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
+                android:text="test text"
                 android:textColor="@color/black"
-                android:textSize="@dimen/detail_type_and_money_text_size"
-                android:text="test text"/>
+                android:textSize="@dimen/detail_type_and_money_text_size" />
+
             <TextView
                 android:id="@+id/remark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/type_and_money"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/text_gray"
-                android:textSize="@dimen/detail_remark_text_size"
+                android:layout_marginRight="5dp"
                 android:text="test text"
-                android:paddingTop="4dp"
-                android:layout_below="@id/type_and_money"/>
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/detail_remark_text_size" />
         </RelativeLayout>
-
 
     </android.support.v7.widget.CardView>
 
 
 </RelativeLayout>
+
+
+
+
+

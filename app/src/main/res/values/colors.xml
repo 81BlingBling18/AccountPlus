@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#5CB190</color>
+    <color name="colorPrimaryDark">#529E81</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="keyboard_button_normal">#213545</color>
+    <color name="keyboard_button_pressed">#111F2A</color>
+    <color name="keyboard_button_text">#8B969C</color>
+    <color name="text_unselected">#788084</color>
+    <color name="text_selected">#b1bcc2</color>
+    <color name="keyboard_divider">#2D404E</color>
+    <color name="account_edit_text_color">#E27D61</color>
+    <color name="account_type_button_text">#8A959B</color>
     <color name="toolbar_green">#59B390</color>
     <color name="toolbar_green_light">#ACD9C8</color>
     <color name="text_gray">#8A959B</color>

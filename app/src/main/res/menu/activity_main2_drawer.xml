@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/set_budget"
+            android:icon="@mipmap/setting"
+            android:title="设置预算"/>
+        <item
+            android:id="@+id/password_protection"
+            android:icon="@mipmap/password"
+            android:title="密码保护"/>
+        <item
+            android:id="@+id/account_notification"
+            android:icon="@mipmap/notification"
+            android:title="记账提醒"/>
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/feedback"
+            android:icon="@mipmap/feedback"
+            android:title="反馈"/>
+        <item
+            android:id="@+id/more"
+            android:icon="@mipmap/more"
+            android:title="更多"/>
+    </group>
+
+</menu>

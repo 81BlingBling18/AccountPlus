@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottombar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.ysyao.bottomtabbar.BottomTextViewGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:background="@color/keyboard_button_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.ysyao.bottomtabbar.SelectableBottomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="明细"
+            android:textSize="13sp"
+            bottombar:selected_icon="@mipmap/list"
+            bottombar:unselected_icon="@mipmap/list"
+            bottombar:text_selected_color="@color/text_selected"
+            bottombar:text_unselected_color="@color/text_unselected"
+            bottombar:default_selected="true"
+            />
+
+        <com.ysyao.bottomtabbar.SelectableBottomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="明细"
+            android:textSize="13sp"
+            bottombar:selected_icon="@mipmap/list"
+            bottombar:unselected_icon="@mipmap/list"
+            bottombar:text_selected_color="@color/text_selected"
+            bottombar:text_unselected_color="@color/text_unselected"
+            bottombar:default_selected="true"
+            />
+        <com.ysyao.bottomtabbar.SelectableBottomTextView
+            android:id="@+id/graph"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="报表"
+            android:textSize="13sp"
+            bottombar:selected_icon="@mipmap/graph"
+            bottombar:unselected_icon="@mipmap/graph"
+            bottombar:text_selected_color="@color/text_selected"
+            bottombar:text_unselected_color="@color/text_unselected"
+            bottombar:default_selected="false"
+            />
+
+    </com.ysyao.bottomtabbar.BottomTextViewGroup>
+
+    <ImageButton
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add"
+        android:layout_gravity="center_horizontal"/>
+</FrameLayout>

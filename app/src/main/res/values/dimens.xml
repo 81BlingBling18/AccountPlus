@@ -15,5 +15,20 @@
     <dimen name="detail_type_and_money_text_size">13sp</dimen>
     <dimen name="detail_remark_text_size">10sp</dimen>
     <dimen name="bottom_bar_height">52dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="keyboard_button_height">55dp</dimen>
+    <dimen name="keyboard_height">240dp</dimen>
+    <dimen name="keyboard_text_size">20sp</dimen>
+    <dimen name="radio_group_width">130dp</dimen>
+    <dimen name="radio_group_height">25dp</dimen>
+    <dimen name="radio_group_text_size">14sp</dimen>
+    <dimen name="view_pager_height">249dp</dimen>
+    <dimen name="account_type_button_width">72dp</dimen>
+    <dimen name="account_type_button_height">68dp</dimen>
+    <dimen name="account_type_button_text_size">13sp</dimen>
+    <dimen name="time_picker_bar_height">36dp</dimen>
 
 </resources>

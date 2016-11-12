@@ -10,14 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".details.MainActivity"
-            android:launchMode="singleTask">
-            <intent-filter>
+        <activity android:name=".details.MainActivity">
+
+            <intent-filte>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filte>
         </activity>
+
+        <activity android:name=".details.AccountEditActivity"/>
+
         <activity android:name=".add_item.AddEditAccountActivity"
             android:launchMode="singleTask"/>
     </application>

@@ -1,24 +1,19 @@
 package com.happycoding.uniquehust.accountplus.details;
 
-import android.icu.util.Calendar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
-import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
 import com.happycoding.uniquehust.accountplus.R;
-
-import org.w3c.dom.Text;
 
 import java.util.Date;
 
@@ -37,7 +32,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.detail_fragment);
         ButterKnife.bind(this);
         budget.setMax(100);
         budget.setProgress(50);

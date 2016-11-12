@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_dialog_material_background.xml"
-    },
-    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/medicine.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/medicine.png"
     },
@@ -12,16 +8,20 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/comb.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/clothes.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/clothes.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_large.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/circle_shape_large.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/pen.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/pen.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/gift.png",
@@ -32,12 +32,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_icon_background.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/lipstick.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/lipstick.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/snack.png",
@@ -48,6 +48,14 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/pot.png"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/wave_icon.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/AccountPlus/wavekit/unspecified/res/drawable/wave_icon.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_track_material.xml"
     },
@@ -56,12 +64,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/navigation_empty_icon.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/rent.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/rent.png"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/empty_account_item.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/empty_account_item.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/rent.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/rent.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
@@ -84,268 +92,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/side_nav_bar.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/navigation_empty_icon.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_icon_background.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_fab_background.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/tel_fare.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/tel_fare.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/normal.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/normal.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_snackbar_background.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/book.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/book.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/tie.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/tie.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/food.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/food.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/mobile_phone.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/mobile_phone.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/wave_icon.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/AccountPlus/wavekit/unspecified/res/drawable/wave_icon.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/purse.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/purse.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_check_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_small.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/circle_shape_small.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_ic_visibility.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/game.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/game.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/kfc.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/kfc.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/car.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/car.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/internet_fare.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/internet_fare.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/pocket_money.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/pocket_money.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_edit_text_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/clothes.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/clothes.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_large.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/circle_shape_large.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/lipstick.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/lipstick.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/wave_icon.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/AccountPlus/wavekit/unspecified/res/drawable/wave_icon.png"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
@@ -360,8 +112,8 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/tel_fare.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/tel_fare.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/rice.png",
@@ -376,36 +128,76 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/normal.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/normal.png"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/ktv.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/ktv.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/book.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/book.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_small.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/circle_shape_small.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/tie.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/tie.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/food.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/food.png"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/mobile_phone.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/mobile_phone.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/purse.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/purse.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_large.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/circle_shape_large.xml"
-    },
-    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/movie.png",
@@ -416,6 +208,10 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/travel.png"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/game.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/game.png"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_radio_material.xml"
     },
@@ -424,8 +220,8 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/cosmetology.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
@@ -440,52 +236,68 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_snackbar_background.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/kfc.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/kfc.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_ic_visibility.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/car.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/car.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/internet_fare.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/internet_fare.png"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/camera.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/camera.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/pocket_money.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/pocket_money.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_bottom_navigation_item_background.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/fruit.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable/fruit.png"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/salary.png",
@@ -496,11 +308,15 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_edit_text_material.xml"
     }
 ]

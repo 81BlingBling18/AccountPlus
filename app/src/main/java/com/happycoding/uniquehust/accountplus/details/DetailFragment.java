@@ -1,0 +1,67 @@
+package com.happycoding.uniquehust.accountplus.details;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.happycoding.uniquehust.accountplus.R;
+import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
+import com.happycoding.uniquehust.accountplus.add_item.AddEditAccountActivity;
+import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
+import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.items.AccountItem;
+import com.yuan.waveview.WaveView;
+
+import java.util.Date;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+/**
+ * Created by qimeng on 16-11-12.
+ */
+
+public class DetailFragment extends Fragment {
+
+
+    @BindView(R.id.budget_message)
+    WaveView budget;
+    @BindView(R.id.account_list)
+    RecyclerView account_list;
+    @BindView(R.id.remained_budget)
+    TextView remainedBudget;
+    @BindView(R.id.month_income) TextView monthIncome;
+    @BindView(R.id.month_outcome)TextView monthOutcome;
+    @BindView(R.id.income_number)TextView income_Number;
+    @BindView(R.id.outcome_number) TextView outcomeNumber;
+
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.detail_fragment, container, false);
+        ButterKnife.bind(this,view);
+
+        budget.setMax(100);
+        budget.setProgress(50);
+        Date date = new Date();
+        Log.d("holo",date.getTime() + "shijian ");
+        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
+                , 12345678,2232982,66666);
+        DatabaseHelper.add(item);
+        account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
+        account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));
+        return view;
+    }
+}

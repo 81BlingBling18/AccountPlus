@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }

@@ -4,12 +4,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/clothes.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/clothes.png"
-    },
-    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/house.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/house.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/clothes.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/clothes.png"
     },
     {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/photo.png",
@@ -20,12 +20,12 @@
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/book.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/add.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/add.png"
-    },
-    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/add.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/add.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/medicine.png",
@@ -156,12 +156,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/edit.png"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/photo.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/photo.png"
-    },
-    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/medicine.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/medicine.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/photo.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/photo.png"
     },
     {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/gift_pressed.png",

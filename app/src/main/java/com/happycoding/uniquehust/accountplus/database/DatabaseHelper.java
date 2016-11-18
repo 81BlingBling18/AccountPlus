@@ -23,18 +23,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static DatabaseHelper databaseHelper = new DatabaseHelper(AccountPlusApp.getInstance().getApplicationContext());
     private static SQLiteDatabase database = databaseHelper.getWritableDatabase();
     private static final String TEXT_TYPE = " TEXT";
-    public static final String  REAL_TYPE = " REAL";
+    public static final String REAL_TYPE = " REAL";
+    public static final String INTEGER_TYPE = " INTEGER";
     private static final String COMMA_SEP = ",";
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + AccountDatabaseContract.AccountEntry.TABLE_NAME + " (" +
                     AccountDatabaseContract.AccountEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE + REAL_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT + REAL_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_DESCRIPTION + TEXT_TYPE + COMMA_SEP +
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TIMESTAMP + REAL_TYPE + COMMA_SEP +
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP + REAL_TYPE + COMMA_SEP +
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID + REAL_TYPE +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_YEAR + INTEGER_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_MONTH + INTEGER_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY + INTEGER_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP + INTEGER_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID + INTEGER_TYPE +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_ISINCOME + INTEGER_TYPE +
                     " )";
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + AccountDatabaseContract.AccountEntry.TABLE_NAME;
@@ -55,34 +59,99 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(SQL_DELETE_ENTRIES);
         onCreate(sqLiteDatabase);
     }
-    public static void add(AccountItem item){
+
+    public static void add(AccountItem item) {
         ContentValues values = new ContentValues();
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE, item.getType());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE, item.getTitle());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT, item.getAmount());
-        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_DESCRIPTION,item.getDescription());
-        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TIMESTAMP,item.getTimeStamp());
-        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP, item.getTimeStamp());
-        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID,item.getIconID());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_DESCRIPTION, item.getDescription());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_YEAR, item.getYear());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_MONTH, item.getMonth());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY, item.getDay());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID, item.getIconID());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ISINCOME, item.getIconID());
         database.insert(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, values);
     }
-    public static ArrayList<AccountItem> getAll(){
+
+    public static void update(AccountItem item) {
+        //TODO: What the fuck;
+    }
+
+    public static ArrayList<AccountItem> getAll() {
         ArrayList<AccountItem> list = new ArrayList<AccountItem>();
         Cursor cursor = database.query(null, null, null, null, null, null, null);
-        if (cursor.moveToFirst()){
+        if (cursor.moveToFirst()) {
             do {
                 AccountItem item = new AccountItem(
                         cursor.getInt(0)
                         , cursor.getString(1)
                         , cursor.getDouble(2)
                         , cursor.getString(3)
-                        , cursor.getLong(4)
-                        , cursor.getLong(5)
-                        , cursor.getInt(6));
+                        , cursor.getInt(4)
+                        , cursor.getInt(5)
+                        , cursor.getInt(6)
+                        , cursor.getInt(7)
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
                 list.add(item);
             } while (cursor.moveToNext());
         }
         return list;
+    }
+
+    public static double getMonthIncome(int year, int month) {
+        String[] args = {"" + year, "" + month};
+        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
+        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND is_income = 1", args);
+        if (cursor.moveToFirst()) {
+            do {
+                AccountItem item = new AccountItem(
+                        cursor.getInt(0)
+                        , cursor.getString(1)
+                        , cursor.getDouble(2)
+                        , cursor.getString(3)
+                        , cursor.getInt(4)
+                        , cursor.getInt(5)
+                        , cursor.getInt(6)
+                        , cursor.getInt(7)
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
+                list.add(item);
+            } while (cursor.moveToNext());
+        }
+        double sum = 0;
+        for (AccountItem i : list) {
+            sum += i.getAmount();
+        }
+        return sum;
+    }
+
+    public static double getMonthOutcome(int year, int month) {
+        String[] args = {"" + year, "" + month};
+        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
+        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND is_income = 0", args);
+        if (cursor.moveToFirst()) {
+            do {
+                AccountItem item = new AccountItem(
+                        cursor.getInt(0)
+                        , cursor.getString(1)
+                        , cursor.getDouble(2)
+                        , cursor.getString(3)
+                        , cursor.getInt(4)
+                        , cursor.getInt(5)
+                        , cursor.getInt(6)
+                        , cursor.getInt(7)
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
+                list.add(item);
+            } while (cursor.moveToNext());
+        }
+        double sum = 0;
+        for (AccountItem i : list) {
+            sum += i.getAmount();
+        }
+        return sum;
     }
 
 }

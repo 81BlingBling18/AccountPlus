@@ -18,7 +18,6 @@
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.happycoding.uniquehust.accountplus.details.MainActivity"/>
                 <category android:name="android.intent.category.LAUNCHER" />
-                　
             </intent-filter>
         </activity>
 
@@ -26,6 +25,8 @@
 
         <activity android:name=".add_item.AddEditAccountActivity"
             android:launchMode="singleTask"/>
+        <activity android:name=".details.SetPassword"/>
+        <activity android:name=".details.PasswordProtection"/>
     </application>
 
 </manifest>

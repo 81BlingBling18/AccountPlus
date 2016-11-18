@@ -118,6 +118,7 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
         Button edit;
         Button delete;
         TextView date;
+        boolean visible = false;
         public ViewHolder(View view,int type) {
             super(view);
             if (type == AccountPlusApp.TYPE_DAY_BEGIN){
@@ -128,8 +129,39 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
                 picture = (ImageView) view.findViewById(R.id.picture);
                 edit = (Button) view.findViewById(R.id.edit);
                 delete = (Button) view.findViewById(R.id.delete);
-            }
-        }
 
+                edit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO:start new activity
+                    }
+                });
+
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO:delete item
+                    }
+                });
+            }
+
+            view.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    if (edit != null && delete != null) {
+                        if (visible){
+                            edit.setVisibility(View.INVISIBLE);
+                            delete.setVisibility(View.INVISIBLE);
+                            visible = false;
+                        }else {
+                            edit.setVisibility(View.VISIBLE);
+                            delete.setVisibility(View.VISIBLE);
+                            visible = true;
+                        }
+                    }
+                    return false;
+                }
+            });
+        }
     }
 }

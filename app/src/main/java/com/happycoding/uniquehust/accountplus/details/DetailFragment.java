@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.happycoding.uniquehust.accountplus.R;
@@ -22,11 +23,16 @@ import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+import static android.view.View.GONE;
 
 /**
  * Created by qimeng on 16-11-12.
@@ -35,23 +41,27 @@ import butterknife.OnClick;
 public class DetailFragment extends Fragment {
 
 
-    @BindView(R.id.budget_message)
-    WaveView budget;
-    @BindView(R.id.account_list)
-    RecyclerView account_list;
-    @BindView(R.id.remained_budget)
-    TextView remainedBudget;
+    @BindView(R.id.budget_message) WaveView budget;
+    @BindView(R.id.account_list) RecyclerView account_list;
+    @BindView(R.id.remained_budget) TextView remainedBudget;
     @BindView(R.id.month_income) TextView monthIncome;
     @BindView(R.id.month_outcome)TextView monthOutcome;
     @BindView(R.id.income_number)TextView income_Number;
     @BindView(R.id.outcome_number) TextView outcomeNumber;
-
+    @BindView(R.id.empty_page) ImageView emptyPage;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_fragment, container, false);
         ButterKnife.bind(this,view);
+
+        ArrayList<AccountItem>list = DatabaseHelper.getAll();
+        if (list.size() == 0) {
+            account_list.setVisibility(GONE);
+        }else{
+            emptyPage.setVisibility(GONE);
+        }
 
         budget.setMax(100);
         budget.setProgress(50);

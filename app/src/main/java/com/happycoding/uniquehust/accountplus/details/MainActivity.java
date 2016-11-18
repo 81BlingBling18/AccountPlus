@@ -1,7 +1,9 @@
 package com.happycoding.uniquehust.accountplus.details;
 
+import android.app.Application;
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.transition.Transition;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +21,8 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 
 import com.happycoding.uniquehust.accountplus.R;
+import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.util.PasswordSystem;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,11 +39,13 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        PasswordSystem.getInstance().initPasswordSystem();
 //        DetailFragment detailFragment = new DetailFragment();
 //        FragmentManager fragmentManager = getSupportFragmentManager();
 //        FragmentTransaction transaction = fragmentManager.beginTransaction();
 //        transaction.replace(R.id.empty_fragment, detailFragment);
 //        transaction.commit();
+
 
 
 
@@ -64,6 +70,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -106,6 +114,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.set_budget) {
             Log.d("drawer", "onNavigationItemSelected: 1");
         } else if (id == R.id.password_protection) {
+            Intent intent = new Intent(MainActivity.this, PasswordProtection.class);
+            startActivity(intent);
             Log.d("drawer", "onNavigationItemSelected: 2");
         } else if (id == R.id.account_notification) {
             Log.d("drawer", "onNavigationItemSelected: 3");

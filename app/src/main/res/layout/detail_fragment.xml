@@ -5,8 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.happycoding.uniquehust.accountplus.details.Main2Activity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
 
     <android.support.v7.widget.RecyclerView
@@ -16,6 +15,13 @@
         android:paddingTop="@dimen/account_list_to_top">
 
     </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/empty_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty_background"/>
+
     <com.yuan.waveview.WaveView
         android:id="@+id/budget_message"
         android:layout_width="@dimen/wave_view_diameter"
@@ -27,6 +33,7 @@
         app:max="20" />
 
     <TextView
+        android:id="@+id/remained"
         android:text="@string/remained_budget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +43,12 @@
         android:id="@+id/remained_budget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/remained_budget"/>
+        android:text="1000"
+        android:textSize="25dp"
+        android:textColor="@color/toolbar_green"
+        android:layout_below="@id/remained"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
     <TextView
         android:id="@+id/month_income"
         android:layout_width="wrap_content"
@@ -49,8 +61,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/month_income"
+        android:textColor="@color/toolbar_green"
+        android:textSize="25sp"
         android:paddingLeft="30dp"
-        android:text="0"/>
+        android:text="10000"/>
 
     <TextView
         android:id="@+id/month_outcome"
@@ -66,6 +80,8 @@
         android:layout_below="@id/month_outcome"
         android:layout_toRightOf="@id/budget_message"
         android:layout_marginLeft="30dp"
-        android:text="0"/>
+        android:textColor="@color/text_red"
+        android:textSize="25sp"
+        android:text="20000"/>
 
 </RelativeLayout>

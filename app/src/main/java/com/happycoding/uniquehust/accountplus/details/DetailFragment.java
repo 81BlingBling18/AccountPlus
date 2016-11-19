@@ -56,22 +56,21 @@ public class DetailFragment extends Fragment {
         View view = inflater.inflate(R.layout.detail_fragment, container, false);
         ButterKnife.bind(this,view);
 
-        ArrayList<AccountItem>list = DatabaseHelper.getAll();
-        if (list.size() == 0) {
-            account_list.setVisibility(GONE);
-        }else{
-            emptyPage.setVisibility(GONE);
-        }
+        //ArrayList<AccountItem>list = DatabaseHelper.getAll();
+//        if (list.size() == 0) {
+//            account_list.setVisibility(GONE);
+//        }else{
+//            emptyPage.setVisibility(GONE);
+//        }
 
         budget.setMax(100);
         budget.setProgress(50);
         Date date = new Date();
         Log.d("holo",date.getTime() + "shijian ");
-        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
-                , 12345678,2232982,66666);
-        DatabaseHelper.add(item);
-        account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
-        account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));
+//        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"heihei",2.33,"test",2016,1,22,11,R.drawable.button_bag,AccountPlusApp.TYPE_INCOME);
+//        DatabaseHelper.add(item);
+//        account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
+//        account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));
         return view;
     }
 }

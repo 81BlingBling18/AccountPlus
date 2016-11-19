@@ -120,6 +120,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.account_notification) {
             Log.d("drawer", "onNavigationItemSelected: 3");
         } else if (id == R.id.feedback) {
+            Intent intent = new Intent(MainActivity.this, FeedBackActivity.class);
+            startActivity(intent);
             Log.d("drawer", "onNavigationItemSelected: 4");
         } else if (id == R.id.more) {
             Log.d("drawer", "onNavigationItemSelected: 5");

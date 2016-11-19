@@ -18,4 +18,5 @@
     <color name="text_red">#E27D61</color>
     <color name="dark_blue">#162B3C</color>
     <color name="light_gray">#C0C0C0</color>
+    <color name="light_light_light_gray">#F5F5F5</color>
 </resources>

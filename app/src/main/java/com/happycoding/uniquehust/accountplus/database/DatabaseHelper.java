@@ -82,30 +82,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //TODO: What the fuck;
     }
 
-    public static ArrayList<AccountItem> getAll() {
-        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
-
-        Cursor cursor = database.query(null, null, null, null, null, null, null);
-        if (cursor.moveToFirst()) {
-            do {
-                AccountItem item = new AccountItem(
-                        cursor.getInt(0)
-                        , cursor.getString(1)
-                        , cursor.getDouble(2)
-                        , cursor.getString(3)
-                        , cursor.getInt(4)
-                        , cursor.getInt(5)
-                        , cursor.getInt(6)
-                        , cursor.getInt(7)
-                        , cursor.getInt(8)
-                        , cursor.getInt(9));
-
-                list.add(item);
-
-            } while (cursor.moveToNext());
-        }
-        return list;
-    }
+//    public static ArrayList<AccountItem> getAll() {
+//        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
+//
+//        Cursor cursor = database.query(null, null, null, null, null, null, null);
+//        if (cursor.moveToFirst()) {
+//            do {
+//                AccountItem item = new AccountItem(
+//                        cursor.getInt(0)
+//                        , cursor.getString(1)
+//                        , cursor.getDouble(2)
+//                        , cursor.getString(3)
+//                        , cursor.getInt(4)
+//                        , cursor.getInt(5)
+//                        , cursor.getInt(6)
+//                        , cursor.getInt(7)
+//                        , cursor.getInt(8)
+//                        , cursor.getInt(9));
+//
+//                list.add(item);
+//
+//            } while (cursor.moveToNext());
+//        }
+//        return list;
+//    }
 
     public static double getMonthIncome(int year, int month) {
         String[] args = {"" + year, "" + month};

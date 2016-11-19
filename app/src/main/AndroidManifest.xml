@@ -27,6 +27,7 @@
             android:launchMode="singleTask"/>
         <activity android:name=".details.SetPassword"/>
         <activity android:name=".details.PasswordProtection"/>
+        <activity android:name=".details.FeedBackActivity"/>
     </application>
 
 </manifest>

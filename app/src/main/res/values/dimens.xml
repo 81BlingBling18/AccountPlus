@@ -31,4 +31,10 @@
     <dimen name="account_type_button_text_size">13sp</dimen>
     <dimen name="time_picker_bar_height">36dp</dimen>
 
+    <!--feedback activity-->
+    <dimen name="feedback_button_width">60dp</dimen>
+    <dimen name="feedback_button_height">20dp</dimen>
+    <dimen name="feedback_text_size">20sp</dimen>
+    <dimen name="feedback_text_frame_height">120dp</dimen>
+
 </resources>

@@ -152,13 +152,20 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_game.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_game.xml"
 >>>>>>> BlingBling
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_bag.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_bag.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_game.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_game.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",

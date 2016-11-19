@@ -31,6 +31,9 @@ public class AccountItem {
         this.isIncome = isIncome;
     }
 
+    public AccountItem() {
+    }
+
     public int getType() {
         return type;
     }
@@ -103,12 +106,11 @@ public class AccountItem {
         this.iconID = iconID;
     }
 
-
-    public int isIncome() {
+    public int getIsIncome() {
         return isIncome;
     }
 
-    public void setIncome(int income) {
-        isIncome = income;
+    public void setIsIncome(int isIncome) {
+        this.isIncome = isIncome;
     }
 }

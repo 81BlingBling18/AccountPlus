@@ -1,6 +1,7 @@
 [
     {
         "outputFile": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+<<<<<<< HEAD
         "map": [
             {
                 "to": {
@@ -25,6 +26,8 @@
     },
     {
         "outputFile": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+=======
+>>>>>>> BlingBling
         "map": [
             {
                 "to": {
@@ -35,7 +38,7 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "file": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

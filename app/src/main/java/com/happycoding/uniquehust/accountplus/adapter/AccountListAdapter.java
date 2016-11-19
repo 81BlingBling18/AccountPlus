@@ -1,8 +1,8 @@
 package com.happycoding.uniquehust.accountplus.adapter;
 
-import android.content.Context;
-import android.media.Image;
+import android.accounts.Account;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -11,10 +11,15 @@ import android.widget.TextView;
 
 import com.happycoding.uniquehust.accountplus.R;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.happycoding.uniquehust.accountplus.util.GetPicture;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,7 +32,23 @@ import butterknife.OnClick;
 public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.ViewHolder>{
     private ArrayList<AccountItem> list;
 
+
     public AccountListAdapter(ArrayList<AccountItem> list) {
+        int tempCounter = 0;
+        int tempDay = 0;
+        //将每一天的起始item添加进去
+        ArrayList<AccountItem> tempList = new ArrayList<>(list.size());
+        for (int i = 0;i<list.size();i++) {
+            if (tempDay != list.get(i).getDay()) {
+                AccountItem item = new AccountItem();
+                item.setType(AccountPlusApp.TYPE_DAY_BEGIN);
+                item.setDay(list.get(i).getDay());
+                tempList.add(i + tempCounter, item);
+                tempList.add(i + tempCounter + 1, list.get(i));
+                tempDay = list.get(i).getDay();
+                tempCounter++;
+            }
+        }
         this.list = list;
     }
 
@@ -42,46 +63,102 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
     }
 
     @Override
+    public int getItemViewType(int position) {
+        Lg.d(list.get(position).getType() + "");
+        return list.get(position).getType();
+    }
+
+    @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         AccountItem item = list.get(position);
-        if (item.getPicTimeStamp() != 0){
-            holder.picture.setImageBitmap(GetPicture.get(item.getPicTimeStamp()));
+        if(item.getType() == AccountPlusApp.TYPE_DAY_BEGIN){
+            holder.date.setText(list.get(position).getDay() + "日");
+        }else {
+            if (item.getPicTimeStamp() != 0){
+                holder.picture.setImageBitmap(GetPicture.get(item.getPicTimeStamp()));
+            }
+
+            String str;
+            //收入与支出的价格和名字顺序相反
+            if (item.getType() == AccountPlusApp.TYPE_OUTCOME){
+                str = item.getTitle() + "  " + item.getAmount();
+            }else{
+                str = item.getAmount() + "  " + item.getTitle();
+            }
+            holder.remark.setText(item.getDescription());
+            holder.typeAndMoney.setText(str);
+            Lg.d(item.getDescription() + str);
+            //holder.icon.setImageResource(item.getIconID());
         }
 
-        String str = null;
-        //收入与支出的价格和名字顺序相反
-        if (item.getType() == AccountPlusApp.TYPE_INCOME){
-            str = item.getTitle() + "  " + item.getDescription();
-        }else{
-            str = item.getDescription() + "  " + item.getTitle();
-        }
-        holder.remark.setText(item.getDescription());
-        holder.typeAndMoney.setText(str);
-        holder.icon.setImageResource(item.getIconID());
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+
+        View view = null;
+        if (viewType == AccountPlusApp.TYPE_OUTCOME){
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.details_outcome_item, null);
+        }else if (viewType == AccountPlusApp.TYPE_INCOME){
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.details_income_item,null);
+        }else{
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.details_day_tip_item, null);
+        }
+        return new ViewHolder(view,viewType);
+
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.type_and_money) TextView typeAndMoney;
-        @BindView(R.id.remark)TextView remark;
-        @BindView(R.id.picture)ImageView picture;
-        @BindView(R.id.icon)ImageView icon;
-        @OnClick(R.id.edit)
-        void start(View view){
-            //TODO:start activity
-        }
-        @OnClick(R.id.delete)
-        void delete(View view) {
-            //TODO:delete item
-        }
-        public ViewHolder(View view) {
+        TextView typeAndMoney;
+        TextView remark;
+        ImageView picture;
+        Button edit;
+        Button delete;
+        TextView date;
+        boolean visible = false;
+        public ViewHolder(View view,int type) {
             super(view);
-            ButterKnife.bind(this, view);
-        }
+            if (type == AccountPlusApp.TYPE_DAY_BEGIN){
+                date = (TextView) view.findViewById(R.id.date);
+            }else{
+                typeAndMoney = (TextView) view.findViewById(R.id.type_and_money);
+                remark = (TextView) view.findViewById(R.id.remark);
+                picture = (ImageView) view.findViewById(R.id.picture);
+                edit = (Button) view.findViewById(R.id.edit);
+                delete = (Button) view.findViewById(R.id.delete);
 
+                edit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO:start new activity
+                    }
+                });
+
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //TODO:delete item
+                    }
+                });
+            }
+
+            view.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    if (edit != null && delete != null) {
+                        if (visible){
+                            edit.setVisibility(View.INVISIBLE);
+                            delete.setVisibility(View.INVISIBLE);
+                            visible = false;
+                        }else {
+                            edit.setVisibility(View.VISIBLE);
+                            delete.setVisibility(View.VISIBLE);
+                            visible = true;
+                        }
+                    }
+                    return false;
+                }
+            });
+        }
     }
 }

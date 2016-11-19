@@ -5,7 +5,7 @@
 
     <View
         android:layout_width="1dp"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/detail_item_height"
         android:layout_centerHorizontal="true"
         android:background="@color/toolbar_green" />
     <TextView
@@ -29,8 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toLeftOf="@id/circle"
-        android:paddingRight="15dp"/>
+        android:paddingLeft="45dp"/>
+
     <TextView
         android:id="@+id/outcome_text"
         android:text="@string/outcome"
@@ -38,9 +38,9 @@
         android:textColor="@color/toolbar_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/circle"
-        android:layout_centerVertical="true"
-        android:paddingLeft="15dp"/>
+        android:layout_alignParentRight="true"
+        android:paddingRight="45dp"
+        android:layout_centerVertical="true" />
 
     <TextView
         android:id="@+id/income"

@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + AccountDatabaseContract.AccountEntry.TABLE_NAME + " (" +
                     AccountDatabaseContract.AccountEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT + REAL_TYPE + COMMA_SEP +
@@ -39,6 +41,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID + INTEGER_TYPE +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_ISINCOME + INTEGER_TYPE +
+
                     " )";
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + AccountDatabaseContract.AccountEntry.TABLE_NAME;
@@ -62,6 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static void add(AccountItem item) {
         ContentValues values = new ContentValues();
+        Lg.d(item.getTitle());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE, item.getType());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE, item.getTitle());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT, item.getAmount());
@@ -80,6 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static ArrayList<AccountItem> getAll() {
         ArrayList<AccountItem> list = new ArrayList<AccountItem>();
+
         Cursor cursor = database.query(null, null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
@@ -94,7 +99,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         , cursor.getInt(7)
                         , cursor.getInt(8)
                         , cursor.getInt(9));
+
                 list.add(item);
+
             } while (cursor.moveToNext());
         }
         return list;

@@ -10,4 +10,11 @@
     tools:showIn="@layout/app_bar_main">
 
 
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.happycoding.uniquehust.accountplus.details.DetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar_main"
+        />
 </RelativeLayout>

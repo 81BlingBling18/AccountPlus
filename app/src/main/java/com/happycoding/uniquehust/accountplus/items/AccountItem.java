@@ -14,10 +14,9 @@ public class AccountItem {
     private int day;
     private long picTimeStamp;
     private int iconID;
-    private int isIncome;
 
 
-    public AccountItem(int type, String title, double amount, String description, int year, int month, int day, long picTimeStamp, int iconID, int isIncome) {
+    public AccountItem(int type, String title, double amount, String description, int year, int month, int day, long picTimeStamp, int iconID) {
 
         this.type = type;
         this.title = title;
@@ -28,7 +27,6 @@ public class AccountItem {
         this.day = day;
         this.picTimeStamp = picTimeStamp;
         this.iconID = iconID;
-        this.isIncome = isIncome;
     }
 
     public int getType() {
@@ -101,14 +99,5 @@ public class AccountItem {
 
     public void setIconID(int iconID) {
         this.iconID = iconID;
-    }
-
-
-    public int isIncome() {
-        return isIncome;
-    }
-
-    public void setIncome(int income) {
-        isIncome = income;
     }
 }

@@ -7,22 +7,34 @@ import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.happycoding.uniquehust.accountplus.R;
+import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
+import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
+import com.happycoding.uniquehust.accountplus.items.AccountItem;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,8 +45,14 @@ import butterknife.OnPageChange;
 public class AccountEditActivity extends AppCompatActivity implements AccountTypeSelectFragment.OnFragmentInteractionListener
         , IncomeTypeSelectFragment.OnFragmentInteractionListener {
 
+    public static final String TAG = "AccountEditActivity";
+
     private int mYear, mMonth, mDay;
-    private String mRemark;
+    private int mType;
+    private String mTitle;
+    private String mDescription;
+    private int drawableId;
+    private int isIncome;
     @BindView(R.id.account_edit_toolbar)
     Toolbar mToolbar;
     @BindView(R.id.account_edit_radiogroup)
@@ -51,6 +69,10 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
     ImageButton mToolbarButton;
     @BindView(R.id.time_picker)
     Button mTimePickerButton;
+    @BindView(R.id.type_icon_preview)
+    ImageButton iconView;
+    @BindView(R.id.type_text_preview)
+    TextView iconText;
 
     @OnCheckedChanged(R.id.radioButton1)
     void onCheckedFirst(boolean checked) {
@@ -116,12 +138,22 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
                 mEditText.setText(mEditText.getText().toString() + ".");
                 break;
             case R.id.backspace:
-                if (!mEditText.getText().toString().equals("")) {
+                if (!mEditText.getText().toString().equals("") && !mEditText.getText().toString().equals("0.00")) {
                     String string = mEditText.getText().toString();
                     mEditText.setText(string.substring(0, string.length() - 1));
                 }
                 break;
             case R.id.ok:
+                if(mTitle != null) {
+                    double amount = Double.parseDouble(mEditText.getText().toString());
+                    Calendar calendar = Calendar.getInstance();
+                    mYear = calendar.get(Calendar.YEAR);
+                    mMonth = calendar.get(Calendar.MONTH) + 1;
+                    mDay = calendar.get(Calendar.DAY_OF_MONTH);
+                    AccountItem item = new AccountItem(mType, mTitle, amount, mDescription, mYear, mMonth, mDay,
+                            System.currentTimeMillis(), drawableId);
+                    DatabaseHelper.add(item);
+                }
                 break;
             default:
                 break;
@@ -130,8 +162,7 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
 
     @OnClick(R.id.toolbar_button)
     void onToolbarButtonClick(View view) {
-        Intent intent = new Intent(AccountEditActivity.this, MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
     }
 
     @OnClick(R.id.time_picker)
@@ -156,11 +187,22 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        mRemark = editText.getText().toString();
+                        mDescription = editText.getText().toString();
                     }
                 })
                 .setNegativeButton("取消", null)
                 .show();
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(AccountTypeSelectFragment.MessageEvent event) {
+        Log.d(TAG, "onMessageEvent: Message Received");
+        iconView.setPressed(true);
+        mTitle = event.type;
+        drawableId = event.drawableId;
+        mType = (event.isIncome)? 1: 0;
+        iconText.setText(event.type);
+        iconView.setBackground(getResources().getDrawable(event.drawableId));
     }
 
     @Override
@@ -168,13 +210,13 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_edit);
         ButterKnife.bind(this);
+        new TypeKeyValue();
         setSupportActionBar(mToolbar);
         mToolbar.setTitle("");
         mYear = Calendar.getInstance().get(Calendar.YEAR);
         mMonth = Calendar.getInstance().get(Calendar.MONTH);
         mDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
         mTimePickerButton.setText(mYear + "-" + (mMonth + 1) + "-" + mDay);
-
         final ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new AccountTypeSelectFragment());
         fragments.add(new IncomeTypeSelectFragment());
@@ -189,6 +231,18 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
                 return fragments.size();
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
     }
 
     @Override

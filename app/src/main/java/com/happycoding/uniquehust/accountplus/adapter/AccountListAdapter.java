@@ -34,25 +34,22 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
 
 
     public AccountListAdapter(ArrayList<AccountItem> list) {
-        this.list = list;
-                int dayPassed = 0;
-        LinkedList<AccountItem> linkedList = new LinkedList<>(list);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd日");
-        String dayNow = simpleDateFormat.format(new Date(list.get(0).getTimeStamp()));
-        AccountItem item = new AccountItem();
-        item.setType(AccountPlusApp.TYPE_DAY_BEGIN);
-        item.setDate(dayNow);
-        linkedList.add(0,item);
-        //至要少有一个
-        for (int i = 1;i<linkedList.size();i++) {
-            String tempDay = simpleDateFormat.format(new Date(linkedList.get(i).getTimeStamp()));
-            if(!tempDay.equals(dayNow)){
-                item.setDate(tempDay);
-                linkedList.add(i,item);
-                dayNow = tempDay;
+        int tempCounter = 0;
+        int tempDay = 0;
+        //将每一天的起始item添加进去
+        ArrayList<AccountItem> tempList = new ArrayList<>(list.size());
+        for (int i = 0;i<list.size();i++) {
+            if (tempDay != list.get(i).getDay()) {
+                AccountItem item = new AccountItem();
+                item.setType(AccountPlusApp.TYPE_DAY_BEGIN);
+                item.setDay(list.get(i).getDay());
+                tempList.add(i + tempCounter, item);
+                tempList.add(i + tempCounter + 1, list.get(i));
+                tempDay = list.get(i).getDay();
+                tempCounter++;
             }
         }
-        this.list = new ArrayList<AccountItem>(linkedList);
+        this.list = list;
     }
 
     @Override
@@ -75,7 +72,7 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
     public void onBindViewHolder(ViewHolder holder, int position) {
         AccountItem item = list.get(position);
         if(item.getType() == AccountPlusApp.TYPE_DAY_BEGIN){
-            holder.date.setText(list.get(position).getDate());
+            holder.date.setText(list.get(position).getDay() + "日");
         }else {
             if (item.getPicTimeStamp() != 0){
                 holder.picture.setImageBitmap(GetPicture.get(item.getPicTimeStamp()));

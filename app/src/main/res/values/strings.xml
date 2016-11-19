@@ -40,6 +40,23 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="type_bag">箱包</string>
+    <string name="type_book">书费</string>
+    <string name="type_bus">交通</string>
+    <string name="type_clothes">衣服</string>
+    <string name="type_film">电影</string>
+    <string name="type_food">食物</string>
+    <string name="type_game">游戏</string>
+    <string name="type_gift">礼物</string>
+    <string name="type_house">房租</string>
+    <string name="type_internet">网费</string>
+    <string name="type_medicine">医药</string>
+    <string name="type_normal">一般</string>
+    <string name="type_phone">话费</string>
+    <string name="type_pocket">零钱</string>
+    <string name="type_salary">工资</string>
+    <string name="type_snack">零食</string>
+    <string name="type_travel">旅游</string>
     <string name="input_old_password" >请输入旧密码</string>
     <string name="input_new_password">请输入新密码</string>
     <string name="input_password_again">请再次输入密码</string>

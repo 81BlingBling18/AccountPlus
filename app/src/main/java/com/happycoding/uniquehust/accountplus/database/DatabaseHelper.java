@@ -30,8 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + AccountDatabaseContract.AccountEntry.TABLE_NAME + " (" +
                     AccountDatabaseContract.AccountEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE + TEXT_TYPE + COMMA_SEP +
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT + REAL_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_DESCRIPTION + TEXT_TYPE + COMMA_SEP +
@@ -40,15 +39,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID + INTEGER_TYPE +
-                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_ISINCOME + INTEGER_TYPE +
-
                     " )";
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + AccountDatabaseContract.AccountEntry.TABLE_NAME;
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "Account.db";
 
-    private DatabaseHelper(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -74,7 +71,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_MONTH, item.getMonth());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY, item.getDay());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID, item.getIconID());
-        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ISINCOME, item.getIconID());
         database.insert(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, values);
     }
 
@@ -82,30 +78,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //TODO: What the fuck;
     }
 
-//    public static ArrayList<AccountItem> getAll() {
-//        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
-//
-//        Cursor cursor = database.query(null, null, null, null, null, null, null);
-//        if (cursor.moveToFirst()) {
-//            do {
-//                AccountItem item = new AccountItem(
-//                        cursor.getInt(0)
-//                        , cursor.getString(1)
-//                        , cursor.getDouble(2)
-//                        , cursor.getString(3)
-//                        , cursor.getInt(4)
-//                        , cursor.getInt(5)
-//                        , cursor.getInt(6)
-//                        , cursor.getInt(7)
-//                        , cursor.getInt(8)
-//                        , cursor.getInt(9));
-//
-//                list.add(item);
-//
-//            } while (cursor.moveToNext());
-//        }
-//        return list;
-//    }
+    public static ArrayList<AccountItem> getAll() {
+        ArrayList<AccountItem> list = new ArrayList<>();
+
+        Cursor cursor = database.query(null, null, null, null, null, null, null);
+        if (cursor.moveToFirst()) {
+            do {
+                AccountItem item = new AccountItem(
+                        cursor.getInt(0)
+                        , cursor.getString(1)
+                        , cursor.getDouble(2)
+                        , cursor.getString(3)
+                        , cursor.getInt(4)
+                        , cursor.getInt(5)
+                        , cursor.getInt(6)
+                        , cursor.getInt(7)
+                        , cursor.getInt(8));
+
+                list.add(item);
+
+            } while (cursor.moveToNext());
+        }
+        return list;
+    }
+
 
     public static double getMonthIncome(int year, int month) {
         String[] args = {"" + year, "" + month};
@@ -122,11 +118,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         , cursor.getInt(5)
                         , cursor.getInt(6)
                         , cursor.getInt(7)
-                        , cursor.getInt(8)
-                        , cursor.getInt(9));
+                        , cursor.getInt(8));
                 list.add(item);
             } while (cursor.moveToNext());
         }
+        cursor.close();
         double sum = 0;
         for (AccountItem i : list) {
             sum += i.getAmount();
@@ -149,11 +145,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         , cursor.getInt(5)
                         , cursor.getInt(6)
                         , cursor.getInt(7)
-                        , cursor.getInt(8)
-                        , cursor.getInt(9));
+                        , cursor.getInt(8));
                 list.add(item);
             } while (cursor.moveToNext());
         }
+        cursor.close();
         double sum = 0;
         for (AccountItem i : list) {
             sum += i.getAmount();

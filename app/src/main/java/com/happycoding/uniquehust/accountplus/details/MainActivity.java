@@ -5,9 +5,15 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+<<<<<<< HEAD
+import android.provider.ContactsContract;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+=======
 import android.support.transition.Transition;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+>>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -21,8 +27,13 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 
 import com.happycoding.uniquehust.accountplus.R;
+<<<<<<< HEAD
+import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
+import com.happycoding.uniquehust.accountplus.global.Lg;
+=======
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.util.PasswordSystem;
+>>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ImageButton mButtonAdd;
+    private DatabaseHelper mHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +62,8 @@ public class MainActivity extends AppCompatActivity
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        mHelper = new DatabaseHelper(this);
+
         mButtonAdd = (ImageButton)findViewById(R.id.button_add);
         mButtonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +100,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 

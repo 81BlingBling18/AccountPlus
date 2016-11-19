@@ -1,11 +1,26 @@
 [
     {
+<<<<<<< Updated upstream
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/feedback_activity_layout.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/feedback_activity_layout.xml"
+=======
+<<<<<<< HEAD
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_cancel_action.xml"
+=======
+<<<<<<< HEAD
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_custom_big.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/details_income_item.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/details_income_item.xml"
+>>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",

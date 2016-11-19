@@ -20,6 +20,9 @@ import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
 import com.happycoding.uniquehust.accountplus.add_item.AddEditAccountActivity;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.global.Lg;
+import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
+
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
@@ -52,6 +55,7 @@ public class DetailFragment extends Fragment {
 
     @Nullable
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_fragment, container, false);
         ButterKnife.bind(this,view);
@@ -67,10 +71,13 @@ public class DetailFragment extends Fragment {
         budget.setProgress(50);
         Date date = new Date();
         Log.d("holo",date.getTime() + "shijian ");
-//        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"heihei",2.33,"test",2016,1,22,11,R.drawable.button_bag,AccountPlusApp.TYPE_INCOME);
-//        DatabaseHelper.add(item);
-//        account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
-//        account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));
+
+        AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
+                , 2016,10,22,1111,R.drawable.button_bag);
+        DatabaseHelper.add(item);
+        account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
+        account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));
+
         return view;
     }
 }

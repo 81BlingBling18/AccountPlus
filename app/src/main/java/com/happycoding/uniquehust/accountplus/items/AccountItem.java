@@ -103,15 +103,7 @@ public class AccountItem {
     public void setIconID(int iconID) {
         this.iconID = iconID;
     }
-<<<<<<< HEAD
-=======
 
-    public int getIsIncome() {
-        return isIncome;
-    }
 
-    public void setIsIncome(int isIncome) {
-        this.isIncome = isIncome;
-    }
->>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
+
 }

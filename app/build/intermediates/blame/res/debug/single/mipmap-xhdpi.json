@@ -32,29 +32,6 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/game.png"
     },
     {
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
-    },
-    {
->>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/add.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/add.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/travel_pressed.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/travel_pressed.png"
-=======
->>>>>>> Stashed changes
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/house_pressed.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/house_pressed.png"
     },
@@ -91,8 +68,6 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/phone.png"
     },
     {
-<<<<<<< HEAD
-=======
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/normal.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/normal.png"
     },
@@ -101,26 +76,6 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/clothes_pressed.png"
     },
     {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/internet_pressed.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/internet_pressed.png"
-    },
-    {
->>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/graph.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/graph.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/internet_pressed.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/internet_pressed.png"
-    },
-    {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/backspace.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/backspace.png"
-=======
->>>>>>> Stashed changes
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/pocket.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/pocket.png"
     },

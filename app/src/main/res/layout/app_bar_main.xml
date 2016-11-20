@@ -15,14 +15,8 @@
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:background="?attr/colorPrimary"
 
-            />
-=======
-            android:theme="@style/AppTheme.AppBarOverlay"
-            android:layout_alignParentTop="true">
->>>>>>> cfc4e55a804810a0eb9e6787f1d251773feb2134
+            android:background="?attr/colorPrimary">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"

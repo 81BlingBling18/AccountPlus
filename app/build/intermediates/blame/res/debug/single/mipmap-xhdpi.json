@@ -32,12 +32,12 @@
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/medicine_pressed.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
-    },
-    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/add.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/add.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
     },
     {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/travel_pressed.png",
@@ -76,12 +76,12 @@
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/phone_pressed.png"
     },
     {
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/internet_pressed.png",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/internet_pressed.png"
-    },
-    {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/graph.png",
         "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/graph.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/internet_pressed.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/internet_pressed.png"
     },
     {
         "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/backspace.png",

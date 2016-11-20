@@ -4,14 +4,28 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/salary.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/salary.png"
+=======
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/clothes.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/clothes.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/house.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/house.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/photo.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/photo.png"
+>>>>>>> master
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/film.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/film.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/gift.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/gift.png"
     },
@@ -24,6 +38,16 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/clothes.png"
     },
     {
+=======
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/add.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/add.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
+    },
+    {
+>>>>>>> master
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/medicine.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/medicine.png"
     },
@@ -144,8 +168,25 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/photo.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/salary_pressed.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/salary_pressed.png"
+=======
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/medicine.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/medicine.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/gift_pressed.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/gift_pressed.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/bus.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/bus.png"
+    },
+    {
+        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/more.png",
+        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/more.png"
+>>>>>>> master
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/gift_pressed.png",

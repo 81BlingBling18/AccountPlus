@@ -22,7 +22,10 @@ import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
+<<<<<<< HEAD:app/src/main/java/com/happycoding/uniquehust/accountplus/details/DetailFragment.java
 
+=======
+>>>>>>> master:app/src/main/java/com/happycoding/uniquehust/accountplus/details/Main2Activity.java
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
@@ -55,6 +58,7 @@ public class DetailFragment extends Fragment {
 
     @Nullable
     @Override
+<<<<<<< HEAD:app/src/main/java/com/happycoding/uniquehust/accountplus/details/DetailFragment.java
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_fragment, container, false);
@@ -67,6 +71,14 @@ public class DetailFragment extends Fragment {
 //            emptyPage.setVisibility(GONE);
 //        }
 
+=======
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        new TypeKeyValue();
+>>>>>>> master:app/src/main/java/com/happycoding/uniquehust/accountplus/details/Main2Activity.java
         budget.setMax(100);
         budget.setProgress(50);
         Date date = new Date();

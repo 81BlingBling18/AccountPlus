@@ -1,12 +1,9 @@
 [
     {
-<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/feedback_activity_layout.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/feedback_activity_layout.xml"
     },
     {
-=======
->>>>>>> master
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/details_income_item.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/details_income_item.xml"
     },
@@ -23,26 +20,16 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/time_picker_bar.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/time_picker_bar.xml"
-=======
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/bottom_navigation.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/bottom_navigation.xml"
->>>>>>> master
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/details_day_tip_item.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/details_day_tip_item.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/set_password_activity.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/set_password_activity.xml"
-=======
-        "merged": "/home/yifan/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/home/yifan/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/activity_main.xml"
->>>>>>> master
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/bottom_navigation.xml",

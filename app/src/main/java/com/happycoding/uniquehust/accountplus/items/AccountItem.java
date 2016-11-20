@@ -14,10 +14,8 @@ public class AccountItem {
     private int day;
     private long picTimeStamp;
     private int iconID;
-<<<<<<< HEAD
-=======
-    private String date;
->>>>>>> master
+
+
 
 
     public AccountItem(int type, String title, double amount, String description, int year, int month, int day, long picTimeStamp, int iconID) {
@@ -107,10 +105,5 @@ public class AccountItem {
     public void setIconID(int iconID) {
         this.iconID = iconID;
     }
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> master
 }

@@ -5,10 +5,7 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,23 +23,16 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 
 import com.happycoding.uniquehust.accountplus.R;
-<<<<<<< HEAD
 
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.util.PasswordSystem;
 
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-=======
-import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
-import com.happycoding.uniquehust.accountplus.global.Lg;
-
-import butterknife.BindView;
 import butterknife.OnClick;
->>>>>>> master
+
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -89,11 +79,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> master
 
     @Override
     public void onBackPressed() {

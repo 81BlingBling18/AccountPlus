@@ -78,10 +78,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static ArrayList<AccountItem> getAll() {
         ArrayList<AccountItem> list = new ArrayList<>();
-<<<<<<< HEAD
 
-=======
->>>>>>> master
         Cursor cursor = database.query(null, null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
@@ -95,10 +92,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         , cursor.getInt(6)
                         , cursor.getInt(7)
                         , cursor.getInt(8));
-<<<<<<< HEAD
 
-=======
->>>>>>> master
                 list.add(item);
             } while (cursor.moveToNext());
         }

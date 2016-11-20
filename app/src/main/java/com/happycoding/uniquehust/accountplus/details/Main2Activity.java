@@ -13,6 +13,7 @@ import com.happycoding.uniquehust.accountplus.adapter.AccountListAdapter;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.global.Lg;
+import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
@@ -39,12 +40,14 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        new TypeKeyValue();
         budget.setMax(100);
         budget.setProgress(50);
         Date date = new Date();
         Log.d("holo",date.getTime() + "shijian ");
         AccountItem item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
-                , 12345678,2232982,66666);
+                , 2016,10,22,1111,R.drawable.button_bag);
         DatabaseHelper.add(item);
         account_list.setLayoutManager(new LinearLayoutManager(this));
         account_list.setAdapter(new AccountListAdapter(DatabaseHelper.getAll()));

@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 
 import java.util.ArrayList;
@@ -23,7 +24,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static DatabaseHelper databaseHelper = new DatabaseHelper(AccountPlusApp.getInstance().getApplicationContext());
     private static SQLiteDatabase database = databaseHelper.getWritableDatabase();
     private static final String TEXT_TYPE = " TEXT";
+<<<<<<< HEAD
+    public static final String  REAL_TYPE = " REAL";
+=======
     public static final String REAL_TYPE = " REAL";
+>>>>>>> 37d1173fa759da12387e7ab70d1c5b25af64f69f
     public static final String INTEGER_TYPE = " INTEGER";
     private static final String COMMA_SEP = ",";
     private static final String SQL_CREATE_ENTRIES =
@@ -33,9 +38,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT + REAL_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_DESCRIPTION + TEXT_TYPE + COMMA_SEP +
+<<<<<<< HEAD
+                    AccountDatabaseContract.AccountEntry.COLUMN_NAME_TIMESTAMP + INTEGER_TYPE + COMMA_SEP +
+=======
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_YEAR + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_MONTH + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY + INTEGER_TYPE + COMMA_SEP +
+>>>>>>> 37d1173fa759da12387e7ab70d1c5b25af64f69f
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP + INTEGER_TYPE + COMMA_SEP +
                     AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID + INTEGER_TYPE +
                     " )";
@@ -61,6 +70,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static void add(AccountItem item) {
         ContentValues values = new ContentValues();
+        Lg.d(item.getTitle());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TYPE, item.getType());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_TITLE, item.getTitle());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_AMOUNT, item.getAmount());
@@ -71,6 +81,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID, item.getIconID());
         database.insert(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, values);
     }
+<<<<<<< HEAD
+    public static ArrayList<AccountItem> getAll(){
+        ArrayList<AccountItem> list = new ArrayList<AccountItem>();
+        Cursor cursor = database.query(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, null, null, null, null, null);
+        if (cursor.moveToFirst()){
+            do {
+                AccountItem item = new AccountItem(
+                        cursor.getInt(1)
+                        , cursor.getString(2)
+                        , cursor.getDouble(3)
+                        , cursor.getString(4)
+                        , cursor.getLong(5)
+                        , cursor.getLong(6)
+                        , cursor.getInt(7));
+=======
 
     public static void update(AccountItem item) {
         //TODO: What the fuck;
@@ -91,7 +116,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         , cursor.getInt(6)
                         , cursor.getInt(7)
                         , cursor.getInt(8));
+>>>>>>> 37d1173fa759da12387e7ab70d1c5b25af64f69f
                 list.add(item);
+
             } while (cursor.moveToNext());
         }
         return list;

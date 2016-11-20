@@ -30,6 +30,11 @@ public class AccountItem {
         this.iconID = iconID;
     }
 
+<<<<<<< HEAD
+    public AccountItem() {
+
+    }
+
     public void setDate(String date) {
         this.date = date;
     }
@@ -37,6 +42,8 @@ public class AccountItem {
     public String getDate() {
         return date;
     }
+=======
+>>>>>>> 37d1173fa759da12387e7ab70d1c5b25af64f69f
     public int getType() {
         return type;
     }

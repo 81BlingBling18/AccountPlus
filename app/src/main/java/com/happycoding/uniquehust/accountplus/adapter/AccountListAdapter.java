@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,13 +34,26 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
     private ArrayList<AccountItem> list;
 
 
-    public AccountListAdapter(ArrayList<AccountItem> list) {
+    public AccountListAdapter() {
+
+    }
+
+    public void setList(ArrayList<AccountItem> list) {
+        initList(list);
+    }
+    private void initList(ArrayList<AccountItem> list) {
+
+        for (int i = 0;i<list.size();i++) {
+            Lg.d("raw type is  " + list.get(i).getType());
+        }
+
         int tempCounter = 0;
         int tempDay = 0;
         //将每一天的起始item添加进去
-        ArrayList<AccountItem> tempList = new ArrayList<>(list.size());
+        ArrayList<AccountItem> tempList = new ArrayList<>();
         for (int i = 0;i<list.size();i++) {
             if (tempDay != list.get(i).getDay()) {
+                Lg.d("size :" + list.size() + "current i " + i);
                 AccountItem item = new AccountItem();
                 item.setType(AccountPlusApp.TYPE_DAY_BEGIN);
                 item.setDay(list.get(i).getDay());
@@ -47,9 +61,15 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
                 tempList.add(i + tempCounter + 1, list.get(i));
                 tempDay = list.get(i).getDay();
                 tempCounter++;
+            }else {
+                tempList.add(list.get(i));
             }
         }
-        this.list = list;
+        for (int i = 0;i<tempList.size();i++) {
+            Lg.d("rate type is " + tempList.get(i).getType());
+        }
+        this.list = tempList;
+        this.notifyDataSetChanged();
     }
 
     @Override
@@ -78,6 +98,9 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
                 holder.picture.setImageBitmap(GetPicture.get(item.getPicTimeStamp()));
             }
 
+            holder.icon.setImageResource(item.getIconID());
+            holder.icon.setPressed(true);
+            holder.icon.setEnabled(false);
             String str;
             //收入与支出的价格和名字顺序相反
             if (item.getType() == AccountPlusApp.TYPE_OUTCOME){
@@ -115,6 +138,7 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
         Button edit;
         Button delete;
         TextView date;
+        ImageButton icon;
         boolean visible = false;
         public ViewHolder(View view,int type) {
             super(view);
@@ -126,7 +150,7 @@ public class AccountListAdapter extends RecyclerView.Adapter<AccountListAdapter.
                 picture = (ImageView) view.findViewById(R.id.picture);
                 edit = (Button) view.findViewById(R.id.edit);
                 delete = (Button) view.findViewById(R.id.delete);
-
+                icon = (ImageButton) view.findViewById(R.id.icon);
                 edit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

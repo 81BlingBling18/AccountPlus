@@ -4,11 +4,19 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.happycoding.uniquehust.accountplus.R;
+import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
+
+import org.greenrobot.eventbus.EventBus;
+
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +27,32 @@ import com.happycoding.uniquehust.accountplus.R;
  * create an instance of this fragment.
  */
 public class IncomeTypeSelectFragment extends Fragment {
+
+    public static class MessageEvent2 {
+        public String type;
+        public int drawableId;
+        public boolean isIncome;
+        public MessageEvent2(String type, int drawableId, boolean isIncome) {
+            this.type = type;
+            this.isIncome = isIncome;
+            this.drawableId = drawableId;
+        }
+    }
+
+    @OnClick({R.id.btn16, R.id.btn17, R.id.btn18})
+    public void onTypeButtonClick(View v) {
+        String type = ((Button)v).getText().toString();
+        int id = 0;
+        for (int i = 0; i < 17; i++) {
+            if (type.equals(getResources().getString(R.string.type_bag + i))) {
+                id = R.string.type_bag + i;
+                Log.d("miaomiaomiao", "onTypeButtonClick: " + id);
+                break;
+            }
+        }
+        int drawableId = TypeKeyValue.typeIdMap.get(id);
+        EventBus.getDefault().post(new MessageEvent2(type, drawableId, true));
+    }
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -64,8 +98,10 @@ public class IncomeTypeSelectFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_income_type_select, container, false);
+        ButterKnife.bind(this, view);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_income_type_select, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

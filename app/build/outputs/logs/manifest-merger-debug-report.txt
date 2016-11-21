@@ -37,7 +37,7 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/qimeng/AndroidStudioProje
 	android:allowBackup
 		ADDED from /home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from /home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/AndroidManifest.xml:8:9-46
 	android:theme
 		ADDED from /home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/AndroidManifest.xml:11:9-40
 	android:name

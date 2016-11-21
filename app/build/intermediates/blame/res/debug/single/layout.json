@@ -12,6 +12,10 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/graph_fragment_income.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/graph_fragment_income.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_cancel_action.xml"
     },
@@ -288,8 +292,16 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/fragment_graph.xml"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/graph_list_item.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/graph_list_item.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/fragment_income_type_select.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/fragment_income_type_select.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/graph_fragment_outcome.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/layout/graph_fragment_outcome.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",

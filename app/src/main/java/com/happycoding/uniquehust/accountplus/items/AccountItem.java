@@ -4,7 +4,7 @@ package com.happycoding.uniquehust.accountplus.items;
  * Created by qimeng on 16-11-5.
  */
 
-public class AccountItem {
+public class AccountItem implements Comparable<AccountItem>{
     private int type;
     private String title;
     private double amount;
@@ -14,9 +14,6 @@ public class AccountItem {
     private int day;
     private long picTimeStamp;
     private int iconID;
-
-
-
 
     public AccountItem(int type, String title, double amount, String description, int year, int month, int day, long picTimeStamp, int iconID) {
 
@@ -106,4 +103,8 @@ public class AccountItem {
         this.iconID = iconID;
     }
 
+    @Override
+    public int compareTo(AccountItem item) {
+        return item.getDay() - this.day;
+    }
 }

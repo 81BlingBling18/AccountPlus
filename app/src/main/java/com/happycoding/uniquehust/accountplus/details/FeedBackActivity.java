@@ -19,6 +19,10 @@ import butterknife.OnClick;
 
 public class FeedBackActivity extends AppCompatActivity {
 
+    @OnClick({R.id.back_image, R.id.back_text})
+    public void onClick() {
+        onBackPressed();
+    }
     @BindView(R.id.suggestion)
     Button suggestion;
 

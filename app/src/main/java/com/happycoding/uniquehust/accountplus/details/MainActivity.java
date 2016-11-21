@@ -10,7 +10,10 @@ import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -25,18 +28,48 @@ import android.widget.ImageButton;
 import com.happycoding.uniquehust.accountplus.R;
 
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
+import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.global.Lg;
+import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
 import com.happycoding.uniquehust.accountplus.util.PasswordSystem;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.happycoding.uniquehust.accountplus.R.id.toolbar;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    DetailFragment detailFragment;
+    GraphFragment graphFragment;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+
+    @OnClick(R.id.list)
+    public void startDetail() {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.content, detailFragment);
+        transaction.commit();
+    }
+
+    @OnClick(R.id.graph)
+    public void startGraph() {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.content, graphFragment);
+        transaction.commit();
+    }
+
+    @BindView(R.id.drawer_layout)
+    DrawerLayout drawer;
+
+    @OnClick(R.id.navigation)
+    public void startDrawer(View v) {
+        drawer.openDrawer(Gravity.LEFT);
+    }
     private ImageButton mButtonAdd;
     private DatabaseHelper mHelper;
 
@@ -45,7 +78,12 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        toolbar.setTitle("");
 
+        detailFragment = new DetailFragment();
+        graphFragment = new GraphFragment();
+
+        startDetail();
         PasswordSystem.getInstance().initPasswordSystem();
 //        DetailFragment detailFragment = new DetailFragment();
 //        FragmentManager fragmentManager = getSupportFragmentManager();
@@ -54,9 +92,6 @@ public class MainActivity extends AppCompatActivity
 //        transaction.commit();
 
 
-
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         mHelper = new DatabaseHelper(this);
 
         mButtonAdd = (ImageButton)findViewById(R.id.button_add);
@@ -73,6 +108,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        toggle.setDrawerIndicatorEnabled(false);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 

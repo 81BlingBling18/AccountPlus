@@ -10,9 +10,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
+import com.happycoding.uniquehust.accountplus.global.Lg;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -69,6 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_MONTH, item.getMonth());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_DAY, item.getDay());
         values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_ICON_ID, item.getIconID());
+        values.put(AccountDatabaseContract.AccountEntry.COLUMN_NAME_PIC_TIMESTAMP,item.getPicTimeStamp());
         database.insert(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, values);
     }
 
@@ -78,27 +81,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static ArrayList<AccountItem> getAll() {
         ArrayList<AccountItem> list = new ArrayList<>();
-
-        Cursor cursor = database.query(null, null, null, null, null, null, null);
+        Cursor cursor = database.query(AccountDatabaseContract.AccountEntry.TABLE_NAME, null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
                 AccountItem item = new AccountItem(
-                        cursor.getInt(0)
-                        , cursor.getString(1)
-                        , cursor.getDouble(2)
-                        , cursor.getString(3)
-                        , cursor.getInt(4)
+
+                        cursor.getInt(1)
+                        , cursor.getString(2)
+                        , cursor.getDouble(3)
+                        , cursor.getString(4)
                         , cursor.getInt(5)
                         , cursor.getInt(6)
                         , cursor.getInt(7)
-                        , cursor.getInt(8));
-
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
                 list.add(item);
+
             } while (cursor.moveToNext());
         }
         return list;
     }
-
 
     public static double getMonthIncome(int year, int month) {
         String[] args = {"" + year, "" + month};
@@ -130,7 +132,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static double getMonthOutcome(int year, int month) {
         String[] args = {"" + year, "" + month};
         ArrayList<AccountItem> list = new ArrayList<AccountItem>();
-        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND is_income = 0", args);
+        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND type = 0", args);
         if (cursor.moveToFirst()) {
             do {
                 AccountItem item = new AccountItem(
@@ -152,6 +154,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             sum += i.getAmount();
         }
         return sum;
+    }
+
+    public static  ArrayList<AccountItem> getMonthDetail(int year, int month) {
+        ArrayList<AccountItem> list = new ArrayList<>();
+        String[] args = {"" + year, "" + month};
+        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ?", args);
+        if (cursor.moveToFirst()) {
+            do {
+                AccountItem item = new AccountItem(
+                        cursor.getInt(1)
+                        , cursor.getString(2)
+                        , cursor.getDouble(3)
+                        , cursor.getString(4)
+                        , cursor.getInt(5)
+                        , cursor.getInt(6)
+                        , cursor.getInt(7)
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
+                list.add(item);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        Collections.sort(list);
+
+        return list;
     }
 
 }

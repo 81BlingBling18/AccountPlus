@@ -28,6 +28,10 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/medicine.png"
     },
     {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/back_button.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/back_button.png"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/game.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/game.png"
     },
@@ -112,12 +116,12 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/book_pressed.png"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/snack_pressed.png",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/snack_pressed.png"
-    },
-    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/setting.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/setting.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/snack_pressed.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/snack_pressed.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/travel_pressed.png",
@@ -138,6 +142,10 @@
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/edit.png",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/edit.png"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/calender.png",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/mipmap-xhdpi/calender.png"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/mipmap-xhdpi/photo.png",

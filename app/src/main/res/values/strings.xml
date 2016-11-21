@@ -57,7 +57,7 @@
     <string name="type_salary">工资</string>
     <string name="type_snack">零食</string>
     <string name="type_travel">旅游</string>
-    <string name="input_old_password" >请输入旧密码</string>
+    <string name="input_old_password">请输入旧密码</string>
     <string name="input_new_password">请输入新密码</string>
     <string name="input_password_again">请再次输入密码</string>
     <string name="wrong_password">密码输入错误</string>

@@ -1,6 +1,7 @@
 package com.happycoding.uniquehust.accountplus.details;
 
 import android.app.Application;
+import android.app.DatePickerDialog;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,6 +24,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.DatePicker;
 import android.widget.ImageButton;
 
 import com.happycoding.uniquehust.accountplus.R;
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity
     DetailFragment detailFragment;
     GraphFragment graphFragment;
     @BindView(R.id.toolbar) Toolbar toolbar;
+
+    @OnClick(R.id.calender_button)
+    public void onCalenderButtonClick(View view) {
+        DatePickerDialog dialog = new DatePickerDialog();
+    }
 
     @OnClick(R.id.list)
     public void startDetail() {

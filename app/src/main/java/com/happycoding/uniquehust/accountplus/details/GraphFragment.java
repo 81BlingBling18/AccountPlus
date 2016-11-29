@@ -5,9 +5,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
@@ -19,6 +21,7 @@ import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.happycoding.uniquehust.accountplus.R;
 import com.happycoding.uniquehust.accountplus.adapter.GraphFragmentAdapter;
+import com.happycoding.uniquehust.accountplus.adapter.GraphListAdapter;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
@@ -34,10 +37,13 @@ import butterknife.ButterKnife;
  */
 public class GraphFragment extends Fragment {
 
+    public static final String TAG = "GraphFragment";
 //    @BindView(R.id.graph_pager )ViewPager graphPager;
 
     @BindView(R.id.graph_pie_chart)
     PieChart pieChart;
+    @BindView(R.id.graphList)
+    ListView graphList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -106,9 +112,10 @@ public class GraphFragment extends Fragment {
                 entriesList.add(new PieEntry((float)outcomeType[i], getResources().getString(R.string.type_bag + i)));
             }
         }
-        DecimalFormat df = new DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#.##");
         String s = df.format(DatabaseHelper.getMonthOutcome(2016, 11));
         String centerText = "总支出\n¥"+ s;
+        Log.d(TAG, "onCreateView: " + centerText);
 
         pieChart.setDrawCenterText(false);
         pieChart.setCenterText(centerText);
@@ -117,15 +124,15 @@ public class GraphFragment extends Fragment {
         PieDataSet pieDataSet = new PieDataSet(entriesList, "");
         pieData.setDataSet(pieDataSet);
         pieData.setValueFormatter(new PercentFormatter());
-        ArrayList<Integer> colors = new ArrayList<Integer>();
-        for (int c : ColorTemplate.JOYFUL_COLORS)
-            colors.add(c);
-//
-        for (int c : ColorTemplate.COLORFUL_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.LIBERTY_COLORS)
-            colors.add(c);
+        ArrayList<Integer> colors = new ArrayList<>();
+        colors.add(Color.parseColor("#FF8A8A"));
+        colors.add(Color.parseColor("#FFAE72"));
+        colors.add(Color.parseColor("#68C9BF"));
+        colors.add(Color.parseColor("#7DB0EF"));
+        colors.add(Color.parseColor("#8C9AAB"));
+        colors.add(Color.parseColor("#7FAEE8"));
+        colors.add(Color.parseColor("#F68FD5"));
+        colors.add(Color.parseColor("#EF7DAC"));
 
         pieDataSet.setColors(colors);
         pieChart.setData(pieData);
@@ -135,6 +142,9 @@ public class GraphFragment extends Fragment {
         l.setXEntrySpace(0f);
         l.setYEntrySpace(0f);//设置tab之间Y轴方向上的空白间距值
         l.setYOffset(0f);
+
+        graphList.setAdapter(new GraphListAdapter());
+
         return view;
     }
 

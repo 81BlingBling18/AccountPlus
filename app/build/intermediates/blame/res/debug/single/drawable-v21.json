@@ -1,23 +1,11 @@
 [
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_left.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_left.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_film.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_film.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_clothes.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_clothes.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable-v21/design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_game.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_game.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_internet.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_internet.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_bag.xml",
@@ -36,8 +24,24 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_bus.xml"
     },
     {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_gift.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_gift.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/side_nav_bar.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/account_edit_photo_button.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/account_edit_photo_button.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_salary.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_salary.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_snack.xml",
@@ -48,36 +52,40 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_internet.xml"
     },
     {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_text.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_text.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_phone.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_phone.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/account_edit_detail_button.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/account_edit_detail_button.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_left.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_left.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_book.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_book.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_gift.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_gift.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_right.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_right.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_salary.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_salary.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_food.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_food.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_film.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_film.xml"
-    },
-    {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_share.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/toolbar_button.xml",
@@ -100,12 +108,20 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_travel.xml"
     },
     {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_clothes.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_clothes.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_text.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_text.xml"
+    },
+    {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/ic_menu_camera.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_house.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_house.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_right.xml",
@@ -114,6 +130,130 @@
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_pocket.xml",
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_pocket.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_travel.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_travel.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_house.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_house.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/flat_round_shape_left.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_left.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_manage.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_book.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_book.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_clothes.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_clothes.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_game.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_game.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_bag.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_bag.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_food.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_food.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_game.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_game.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/keyboard_background.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/keyboard_background.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_pocket.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_pocket.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/side_nav_bar.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_gift.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_gift.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_salary.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_salary.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_medicine.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_medicine.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_food.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_food.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_film.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_film.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_normal.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_normal.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_bus.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_bus.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_house.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/button_house.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/account_edit_photo_button.xml",
@@ -132,12 +272,16 @@
         "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/notification_action_background.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/account_edit_detail_button.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/account_edit_detail_button.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_snack.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_snack.xml"
     },
     {
-        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/toolbar_button.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/toolbar_button.xml"
+    },
+    {
+        "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/account_edit_detail_button.xml",
+        "source": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/src/main/res/drawable-v21/account_edit_detail_button.xml"
     },
     {
         "merged": "/home/qimeng/AndroidStudioProjects/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/keyboard_background.xml",

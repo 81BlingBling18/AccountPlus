@@ -105,6 +105,10 @@ public class AccountItem implements Comparable<AccountItem>{
 
     @Override
     public int compareTo(AccountItem item) {
-        return item.getDay() - this.day;
+        if(item.getDay() - this.day != 0) {
+            return item.getDay() - this.day;
+        } else {
+            return (item.getPicTimeStamp() - this.picTimeStamp) > 0 ? 1:-1;
+        }
     }
 }

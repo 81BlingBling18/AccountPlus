@@ -1,6 +1,10 @@
 package com.happycoding.uniquehust.accountplus.global;
 
+import android.Manifest;
 import android.app.Application;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.widget.Toast;
 
 /**
@@ -17,8 +21,11 @@ public class AccountPlusApp extends Application {
     @Override
     public void onCreate() {
         accountPlusApp = this;
+
+
         toast = Toast.makeText(this,"",Toast.LENGTH_SHORT);
         toast.setDuration(Toast.LENGTH_SHORT);
+
     }
 
     public static void toast(String str) {

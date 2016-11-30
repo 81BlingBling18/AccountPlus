@@ -105,19 +105,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static double getMonthIncome(int year, int month) {
         String[] args = {"" + year, "" + month};
         ArrayList<AccountItem> list = new ArrayList<AccountItem>();
-        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND is_income = 1", args);
+        Cursor cursor = database.rawQuery("SELECT * FROM account WHERE year = ? AND month = ? AND type = 1", args);
         if (cursor.moveToFirst()) {
             do {
                 AccountItem item = new AccountItem(
-                        cursor.getInt(0)
-                        , cursor.getString(1)
-                        , cursor.getDouble(2)
-                        , cursor.getString(3)
-                        , cursor.getInt(4)
+                        cursor.getInt(1)
+                        , cursor.getString(2)
+                        , cursor.getDouble(3)
+                        , cursor.getString(4)
                         , cursor.getInt(5)
                         , cursor.getInt(6)
                         , cursor.getInt(7)
-                        , cursor.getInt(8));
+                        , cursor.getInt(8)
+                        , cursor.getInt(9));
                 list.add(item);
             } while (cursor.moveToNext());
         }

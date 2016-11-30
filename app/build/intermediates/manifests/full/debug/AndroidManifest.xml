@@ -8,6 +8,9 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:name="com.happycoding.uniquehust.accountplus.global.AccountPlusApp"
         android:allowBackup="true"
@@ -33,6 +36,15 @@
         <activity android:name="com.happycoding.uniquehust.accountplus.details.SetPassword" />
         <activity android:name="com.happycoding.uniquehust.accountplus.details.PasswordProtection" />
         <activity android:name="com.happycoding.uniquehust.accountplus.details.FeedBackActivity" />
+        <activity android:name="com.happycoding.uniquehust.accountplus.details.SetBudgetActivity" />
+
+        <receiver
+            android:name="com.happycoding.uniquehust.accountplus.smsService.SmsReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

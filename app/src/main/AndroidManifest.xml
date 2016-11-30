@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.happycoding.uniquehust.accountplus">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
+
+
         android:name=".global.AccountPlusApp"
         android:allowBackup="true"
         android:icon="@mipmap/webwxgetmsgimg"
@@ -28,6 +33,15 @@
         <activity android:name=".details.SetPassword"/>
         <activity android:name=".details.PasswordProtection"/>
         <activity android:name=".details.FeedBackActivity"/>
+
+        <activity android:name=".details.SetBudgetActivity"/>
+
+        <receiver android:name=".smsService.SmsReceiver"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

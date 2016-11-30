@@ -182,6 +182,7 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
                 mMonth = monthOfYear + 1;
                 mDay = dayOfMonth;
                 mTimePickerButton.setText(mYear + "-" + mMonth + "-" + mDay);
+
             }
         }, mYear, mMonth - 1, mDay).show();
     }

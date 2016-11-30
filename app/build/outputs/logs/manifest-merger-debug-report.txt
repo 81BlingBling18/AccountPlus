@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:3:5-53
 		INJECTED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml
@@ -13,8 +13,16 @@ ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml
 		INJECTED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:5:5-70
+	android:name
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:5:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:5:5-31:19
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:8:5-45:19
 MERGED from [AccountPlus:wavekit:unspecified] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/AccountPlus/wavekit/unspecified/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
@@ -31,61 +39,79 @@ MERGED from [com.android.support:design:25.0.0] /home/yifan/AccountFinal/Account
 MERGED from [com.android.support:transition:25.0.0] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/AndroidManifest.xml:22:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:14:9-41
 	android:supportsRtl
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:15:9-35
 	android:allowBackup
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:8:9-46
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:13:9-46
 	android:theme
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:16:9-40
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:6:9-46
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:11:9-46
 activity#com.happycoding.uniquehust.accountplus.details.MainActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:13:9-22:20
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:15:13-45
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:20:13-45
 	android:launchMode
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:14:13-44
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:19:13-44
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:13:19-93
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:18:19-93
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+com.happycoding.uniquehust.accountplus.details.MainActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:23:25-66
 action#com.happycoding.uniquehust.accountplus.details.MainActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:19:17-101
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:24:17-101
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:19:25-99
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:24:25-99
 category#android.intent.category.LAUNCHER
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:25:27-74
 activity#com.happycoding.uniquehust.accountplus.details.AccountEditActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:24:9-64
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:29:9-64
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:24:19-62
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:29:19-62
 activity#com.happycoding.uniquehust.accountplus.add_item.AddEditAccountActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:26:9-27:46
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:31:9-32:46
 	android:launchMode
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:27:13-44
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:32:13-44
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:26:19-66
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:31:19-66
 activity#com.happycoding.uniquehust.accountplus.details.SetPassword
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:28:9-56
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:33:9-56
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:28:19-54
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:33:19-54
 activity#com.happycoding.uniquehust.accountplus.details.PasswordProtection
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:29:9-63
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:34:9-63
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:29:19-61
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:34:19-61
 activity#com.happycoding.uniquehust.accountplus.details.FeedBackActivity
-ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:30:9-61
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:35:9-61
 	android:name
-		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:30:19-59
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:35:19-59
+activity#com.happycoding.uniquehust.accountplus.details.SetBudgetActivity
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:37:9-62
+	android:name
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:37:19-60
+receiver#com.happycoding.uniquehust.accountplus.smsService.SmsReceiver
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:39:9-44:20
+	android:exported
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:40:13-36
+	android:name
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:39:19-57
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:41:13-43:29
+	android:priority
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:41:28-57
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:42:17-82
+	android:name
+		ADDED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml:42:25-79
 uses-sdk
 INJECTED from /home/yifan/AccountFinal/AccountPlus/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [AccountPlus:wavekit:unspecified] /home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/AccountPlus/wavekit/unspecified/AndroidManifest.xml:7:5-9:41

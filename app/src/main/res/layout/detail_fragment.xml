@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="30dp"
         android:layout_alignParentTop="true"
-        android:text="@string/income_april"/>
+        android:text="本月收入"/>
     <TextView
         android:id="@+id/income_number"
         android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/budget_message"
         android:layout_marginLeft="30dp"
-        android:text="@string/outcome_april"/>
+        android:text="本月支出"/>
     <TextView
         android:id="@+id/outcome_number"
         android:layout_width="wrap_content"

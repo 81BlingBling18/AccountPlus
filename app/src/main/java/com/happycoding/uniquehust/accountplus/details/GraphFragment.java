@@ -26,6 +26,10 @@ import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
 import com.happycoding.uniquehust.accountplus.global.AccountPlusApp;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -38,6 +42,7 @@ import butterknife.ButterKnife;
 public class GraphFragment extends Fragment {
 
     public static final String TAG = "GraphFragment";
+    private int mYear, mMonth, mDay;
 //    @BindView(R.id.graph_pager )ViewPager graphPager;
 
     @BindView(R.id.graph_pie_chart)
@@ -45,9 +50,21 @@ public class GraphFragment extends Fragment {
     @BindView(R.id.graphList)
     ListView graphList;
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MainActivity.MessageEvent3 event) {
+        Log.d(TAG, "onMessageEvent: Message Received");
+        mYear = event.year;
+        mMonth = event.month;
+        mDay = event.day;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        mYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
+        mMonth = java.util.Calendar.getInstance().get(java.util.Calendar.MONTH) + 1;
+        mDay = java.util.Calendar.getInstance().get(java.util.Calendar.DAY_OF_MONTH);
         // Inflate the layout for this fragment
         View view  = inflater.inflate(R.layout.fragment_graph, container, false);
         ButterKnife.bind(this,view);
@@ -95,7 +112,7 @@ public class GraphFragment extends Fragment {
         pieChart.setEntryLabelTextSize(10f);//设置绘制Label的字体大小
 
 
-        ArrayList<AccountItem> list = DatabaseHelper.getMonthDetail(2016, 11);
+        ArrayList<AccountItem> list = DatabaseHelper.getMonthDetail(mYear, mMonth);
         double[] outcomeType = new double[18];
         double[] incomeType = new double[18];
         for (AccountItem i : list) {
@@ -113,7 +130,7 @@ public class GraphFragment extends Fragment {
             }
         }
         DecimalFormat df = new DecimalFormat("#.##");
-        String s = df.format(DatabaseHelper.getMonthOutcome(2016, 11));
+        String s = df.format(DatabaseHelper.getMonthOutcome(mYear, mMonth));
         String centerText = "总支出\n¥"+ s;
         Log.d(TAG, "onCreateView: " + centerText);
 
@@ -148,4 +165,15 @@ public class GraphFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
+    }
 }

@@ -2,6 +2,7 @@ package com.happycoding.uniquehust.accountplus.details;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -27,6 +28,11 @@ import com.happycoding.uniquehust.accountplus.global.TypeKeyValue;
 import com.happycoding.uniquehust.accountplus.items.AccountItem;
 import com.yuan.waveview.WaveView;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -36,6 +42,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static android.content.Context.MODE_PRIVATE;
 import static android.view.View.GONE;
 
 /**
@@ -54,20 +61,39 @@ public class DetailFragment extends Fragment {
     @BindView(R.id.outcome_number) TextView outcomeNumber;
     @BindView(R.id.empty_page) ImageView emptyPage;
 
-    AccountListAdapter adapter;
-    ArrayList<AccountItem> list ;
-    @Nullable
-    @Override
+    private int mYear, mMonth, mDay;
+    private AccountListAdapter adapter;
+    private ArrayList<AccountItem> list;
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MainActivity.MessageEvent3 event) {
+        mYear = event.year;
+        mMonth = event.month;
+        mDay = event.day;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String outcome = df.format(DatabaseHelper.getMonthOutcome(mYear, mMonth));
+        String income = df.format(DatabaseHelper.getMonthIncome(mYear, mMonth));
+        outcomeNumber.setText(outcome);
+        income_Number.setText(income);
+        ArrayList<AccountItem> list = DatabaseHelper.getMonthDetail(mYear, mMonth);
+        adapter.setList(list);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_fragment, container, false);
         ButterKnife.bind(this,view);
 
 
-        budget.setMax(100);
-        budget.setProgress(50);
+        mYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
+        mMonth = java.util.Calendar.getInstance().get(java.util.Calendar.MONTH) + 1;
+        mDay = java.util.Calendar.getInstance().get(java.util.Calendar.DAY_OF_MONTH);
+        DecimalFormat df = new DecimalFormat("#.##");
 
-
+        String outcome = df.format(DatabaseHelper.getMonthOutcome(mYear, mMonth));
+        String income = df.format(DatabaseHelper.getMonthIncome(mYear, mMonth));
+        outcomeNumber.setText(outcome);
+        income_Number.setText(income);
 
         return view;
     }
@@ -76,12 +102,20 @@ public class DetailFragment extends Fragment {
     public void onResume() {
         super.onResume();
         AccountItem item;
+
+
+        SharedPreferences sharedPreferences = AccountPlusApp
+                .getInstance()
+                .getSharedPreferences("budget", MODE_PRIVATE);
+        budget.setMax(100);
+        budget.setProgress(100 - (int)(100*(DatabaseHelper.getMonthOutcome(mYear, mMonth) / sharedPreferences.getFloat("budget", 0))
+        ));
 //        for (int i = 0;i<3;i++) {
 //            item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
 //                    , 2016,10,22, i,R.drawable.button_bag);
 //            DatabaseHelper.add(item);
 //        }
-        ArrayList<AccountItem>list = DatabaseHelper.getMonthDetail(2016,11);
+        ArrayList<AccountItem>list = DatabaseHelper.getMonthDetail(mYear, mMonth);
         Lg.d("size is " + list.size());
         for (int i= 0;i<list.size();i++) {
             item = list.get(i);
@@ -99,5 +133,17 @@ public class DetailFragment extends Fragment {
 
         account_list.setLayoutManager(new LinearLayoutManager(getActivity()));
         account_list.setAdapter(adapter);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
     }
 }

@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.happycoding.uniquehust.accountplus.R;
 import com.happycoding.uniquehust.accountplus.database.DatabaseHelper;
@@ -147,12 +148,19 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
                 if(mTitle != null) {
                     double amount = Double.parseDouble(mEditText.getText().toString());
                     Calendar calendar = Calendar.getInstance();
-                    mYear = calendar.get(Calendar.YEAR);
-                    mMonth = calendar.get(Calendar.MONTH) + 1;
-                    mDay = calendar.get(Calendar.DAY_OF_MONTH);
+
                     AccountItem item = new AccountItem(mType, mTitle, amount, mDescription, mYear, mMonth, mDay,
                             System.currentTimeMillis(), drawableId);
-                    DatabaseHelper.add(item);
+                    if(amount != 0) {
+                        DatabaseHelper.add(item);
+                        Log.d(TAG, "onClick: " + mYear + ' ' + mDay);
+                        Toast.makeText(this, "创建成功！", Toast.LENGTH_LONG).show();
+                        onBackPressed();
+                    } else {
+                        Toast.makeText(this, "你确定金额为0喵？", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(this, "请先选择一个类型！", Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
@@ -171,11 +179,12 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 mYear = year;
-                mMonth = monthOfYear;
+                mMonth = monthOfYear + 1;
                 mDay = dayOfMonth;
-                mTimePickerButton.setText(mYear + "-" + (mMonth + 1) + "-" + mDay);
+                mTimePickerButton.setText(mYear + "-" + mMonth + "-" + mDay);
+
             }
-        }, mYear, mMonth, mDay).show();
+        }, mYear, mMonth - 1, mDay).show();
     }
 
     @OnClick(R.id.account_edit_detail)
@@ -205,6 +214,17 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
         iconView.setBackground(getResources().getDrawable(event.drawableId));
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent2(IncomeTypeSelectFragment.MessageEvent2 event) {
+        Log.d(TAG, "onMessageEvent: Message2 Received");
+        iconView.setPressed(true);
+        mTitle = event.type;
+        drawableId = event.drawableId;
+        mType = (event.isIncome)? 1: 0;
+        iconText.setText(event.type);
+        iconView.setBackground(getResources().getDrawable(event.drawableId));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -214,9 +234,9 @@ public class AccountEditActivity extends AppCompatActivity implements AccountTyp
         setSupportActionBar(mToolbar);
         mToolbar.setTitle("");
         mYear = Calendar.getInstance().get(Calendar.YEAR);
-        mMonth = Calendar.getInstance().get(Calendar.MONTH);
+        mMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
         mDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-        mTimePickerButton.setText(mYear + "-" + (mMonth + 1) + "-" + mDay);
+        mTimePickerButton.setText(mYear + "-" + mMonth + "-" + mDay);
         final ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new AccountTypeSelectFragment());
         fragments.add(new IncomeTypeSelectFragment());

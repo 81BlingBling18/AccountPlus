@@ -2,27 +2,60 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.happycoding.uniquehust.accountplus">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:name=".global.AccountPlusApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/webwxgetmsgimg"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".details.Main2Activity"></activity>
         <activity
             android:name=".details.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.happycoding.uniquehust.accountplus.details.MainActivity" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".details.AccountEditActivity">
+        <activity android:name=".details.AccountEditActivity" />
+        <activity
+            android:name=".add_item.AddEditAccountActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".details.SetPassword" />
+        <activity android:name=".details.PasswordProtection" />
+        <activity android:name=".details.FeedBackActivity" />
+        <activity android:name=".details.SetBudgetActivity" />
+        <activity android:name=".details.RemindKeepAccountsActivity" />
 
-        </activity>
+        <receiver
+            android:name=".smsService.SmsReceiver"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".widget.TestWidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_setting" />
+        </receiver>
+        <receiver android:name=".RemindKeepAccountsService.RemindKeepAccountsReceiver">
+            <intent-filter android:priority="476632982">
+                <action android:name="ELITOR_CLOCK" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".details.SuccessInformActivity"></activity>
     </application>
 
 </manifest>

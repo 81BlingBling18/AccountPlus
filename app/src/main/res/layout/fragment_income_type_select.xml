@@ -9,14 +9,17 @@
     tools:context="com.happycoding.uniquehust.accountplus.details.AccountTypeSelectFragment">
 
     <Button
+        android:id="@+id/btn16"
         style="@style/AccountTypeSelectButtonStyle"
         android:text="一般"
         android:drawableTop="@drawable/button_normal"/>
     <Button
+        android:id="@+id/btn17"
         style="@style/AccountTypeSelectButtonStyle"
         android:text="零钱"
         android:drawableTop="@drawable/button_pocket"/>
     <Button
+        android:id="@+id/btn18"
         style="@style/AccountTypeSelectButtonStyle"
         android:text="工资"
         android:drawableTop="@drawable/button_salary"/>

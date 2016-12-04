@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_green">
+
+        <ImageButton
+            android:id="@+id/back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/back_button"/>
+        <TextView
+            android:id="@+id/back_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/feedback_text_size"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="记账提醒"
+            android:textColor="@color/white"
+            android:textSize="@dimen/feedback_text_size"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_item_height"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启记账提醒"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"/>
+        <Switch
+            android:id="@+id/open_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_item_height"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/top_layout">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="提醒时间"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/time"
+            android:textSize="20sp"
+            android:textColor="@color/text_red"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

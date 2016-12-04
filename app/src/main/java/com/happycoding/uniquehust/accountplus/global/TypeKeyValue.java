@@ -12,7 +12,7 @@ import com.happycoding.uniquehust.accountplus.details.MainActivity;
 public class TypeKeyValue {
     public static HashMap<Integer, Integer> idTypeMap = new HashMap<>();
     public static HashMap<Integer, Integer> typeIdMap = new HashMap<>();
-    public TypeKeyValue() {
+    static {
         for (int i = 0; i < 17; i++) {
             idTypeMap.put(R.drawable.button_bag + i, R.string.type_bag + i);
             typeIdMap.put(R.string.type_bag + i, R.drawable.button_bag + i);

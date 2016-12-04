@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="com.happycoding.uniquehust.accountplus.details.MainActivity">-->
+
+
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.happycoding.uniquehust.accountplus.details.MainActivity">
-
-    <android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/navigation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/aa"
+            android:layout_gravity="start"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#33000000"
             />
 
-    </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2016年12月"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/calender_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/calender"
+            />
+    </android.support.v7.widget.Toolbar>
+
 
     <include layout="@layout/content_main" />
 
-    <include
-        layout="@layout/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom" />
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
+<!--</android.support.design.widget.CoordinatorLayout>-->

@@ -84,12 +84,12 @@
         "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
-    },
-    {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/gift.png",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/gift.png"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -160,12 +160,16 @@
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/tel_fare.png"
     },
     {
-        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/textview_background.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/textview_background.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/rice.png",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/rice.png"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
@@ -204,12 +208,12 @@
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/edit.png"
     },
     {
-        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/game.png",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/game.png"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
@@ -298,6 +302,10 @@
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/circle_shape_small.xml",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/circle_shape_small.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/frame_of_button.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable/frame_of_button.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",

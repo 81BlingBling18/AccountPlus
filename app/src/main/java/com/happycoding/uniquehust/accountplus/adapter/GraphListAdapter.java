@@ -28,12 +28,15 @@ public class GraphListAdapter extends BaseAdapter {
     double[] outcomeType = new double[18];
     double[] incomeType = new double[18];
     double outsum = 0;
+    int mYear, mMonth;
     ArrayList<AccountItem> arrayList = new ArrayList<>();
 
-    public GraphListAdapter() {
+    public GraphListAdapter(int year, int month) {
         super();
+        mYear = year;
+        mMonth = month;
 
-        ArrayList<AccountItem> list = DatabaseHelper.getMonthDetail(2016, 11);
+        ArrayList<AccountItem> list = DatabaseHelper.getMonthDetail(year, month);
 
         for (AccountItem i : list) {
             if (i.getType() == AccountPlusApp.TYPE_OUTCOME) {
@@ -85,7 +88,7 @@ public class GraphListAdapter extends BaseAdapter {
         DecimalFormat df = new DecimalFormat("#.##");
 
         holder.amount.setText(df.format(arrayList.get(i).getAmount()));
-        holder.percent.setText(df.format(arrayList.get(i).getAmount() * 100/ DatabaseHelper.getMonthOutcome(2016, 11)) + "%");
+        holder.percent.setText(df.format(arrayList.get(i).getAmount() * 100/ DatabaseHelper.getMonthOutcome(mYear, mMonth)) + "%");
         return convertView;
     }
 

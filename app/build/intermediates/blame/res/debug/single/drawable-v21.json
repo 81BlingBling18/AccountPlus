@@ -52,12 +52,12 @@
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/keyboard_background.xml"
     },
     {
-        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
-        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_send.xml"
-    },
-    {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_pocket.xml",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_pocket.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_send.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
@@ -92,12 +92,12 @@
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/flat_round_shape_right.xml"
     },
     {
-        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
-        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_share.xml"
-    },
-    {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_medicine.xml",
         "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/button_medicine.xml"
+    },
+    {
+        "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
+        "source": "/home/yifan/AccountFinal/AccountPlus/app/src/main/res/drawable-v21/ic_menu_share.xml"
     },
     {
         "merged": "/home/yifan/AccountFinal/AccountPlus/app/build/intermediates/res/merged/debug/drawable-v21/button_normal.xml",

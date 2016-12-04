@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_light_light_gray"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记账Widget"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@color/light_light_light_gray">
+        <Button
+            android:id="@+id/widget_outcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feedback_button_pressed"
+            android:text="支出"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/widget_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feedback_button_not_pressed"
+            android:text="收入"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/widget_outcome"/>
+
+        <Button
+            android:id="@+id/widget_ok"
+            android:text="确定"
+            android:textColor="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/frame_of_button"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_light_light_gray">
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="@dimen/settings_item_height"
+            android:background="@drawable/textview_background"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5c5c5c"
+                android:text="¥"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:text="800.00"
+                android:textColor="#5c5c5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="@dimen/settings_item_height"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/button_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="房租"
+                android:textColor="#5c5c5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_light_light_gray">
+        <include
+            android:id="@+id/time_picker"
+            layout="@layout/time_picker_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

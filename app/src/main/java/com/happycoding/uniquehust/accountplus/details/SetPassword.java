@@ -21,10 +21,6 @@ import com.happycoding.uniquehust.accountplus.util.PasswordSystem;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by qimeng on 16-11-12.
- */
-
 public class SetPassword extends AppCompatActivity {
 
     private final int PROCESS_INPUT_OLD_PASSWORD = 10010;

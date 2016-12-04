@@ -173,13 +173,13 @@ public class MainActivity extends AppCompatActivity
             builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    EditText type = (EditText)(view.findViewById(R.id.type));
-                    EditText amount = (EditText)(view.findViewById(R.id.amount));
-                    EditText description = (EditText)(view.findViewById(R.id.description));
+                    EditText type = (EditText) (view.findViewById(R.id.type));
+                    EditText amount = (EditText) (view.findViewById(R.id.amount));
+                    EditText description = (EditText) (view.findViewById(R.id.description));
                     DecimalFormat df = new DecimalFormat("#####.##");
                     String s = df.format(Double.parseDouble(amount.getText().toString()));
                     AccountItem item = new AccountItem(
-                            type.getText().toString().equals("支取")? AccountPlusApp.TYPE_OUTCOME: AccountPlusApp.TYPE_INCOME,
+                            type.getText().toString().equals("支取") ? AccountPlusApp.TYPE_OUTCOME : AccountPlusApp.TYPE_INCOME,
                             type.getText().toString(),
                             Double.parseDouble(s),
                             description.getText().toString(),
@@ -189,6 +189,7 @@ public class MainActivity extends AppCompatActivity
                             System.currentTimeMillis(),
                             R.drawable.button_normal);
                     DatabaseHelper.add(item);
+                    startGraph();
                 }
             });
 
@@ -198,9 +199,9 @@ public class MainActivity extends AppCompatActivity
 
                 }
             });
-            EditText type = (EditText)(view.findViewById(R.id.type));
-            EditText amount = (EditText)(view.findViewById(R.id.amount));
-            EditText description = (EditText)(view.findViewById(R.id.description));
+            EditText type = (EditText) (view.findViewById(R.id.type));
+            EditText amount = (EditText) (view.findViewById(R.id.amount));
+            EditText description = (EditText) (view.findViewById(R.id.description));
 
             type.setText(list.get(3));
             amount.setText(list.get(5));
@@ -210,12 +211,10 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-        if (Build.VERSION.SDK_INT >= 23) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS)
-                    != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECEIVE_SMS}
-                        , 0xaaff);
-            }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECEIVE_SMS}
+                    , 0xaaff);
         }
 
     }
@@ -265,6 +264,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
             Log.d("drawer", "onNavigationItemSelected: 2");
         } else if (id == R.id.account_notification) {
+            Intent intent = new Intent(MainActivity.this, RemindKeepAccountsActivity.class);
+            startActivity(intent);
             Log.d("drawer", "onNavigationItemSelected: 3");
         } else if (id == R.id.feedback) {
             Intent intent = new Intent(MainActivity.this, FeedBackActivity.class);

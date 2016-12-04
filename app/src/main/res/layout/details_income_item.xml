@@ -64,7 +64,9 @@
                 android:text="test text"
                 android:textColor="@color/black"
                 android:layout_alignParentRight="true"
-                android:textSize="@dimen/detail_type_and_money_text_size" />
+                android:textSize="@dimen/detail_type_and_money_text_size"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"/>
 
             <TextView
                 android:id="@+id/remark"
@@ -72,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/type_and_money"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
                 android:text="test text"
                 android:textColor="@color/text_gray"
                 android:textSize="@dimen/detail_remark_text_size" />

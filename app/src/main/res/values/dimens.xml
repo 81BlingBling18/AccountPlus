@@ -37,4 +37,5 @@
     <dimen name="feedback_text_size">20sp</dimen>
     <dimen name="feedback_text_frame_height">120dp</dimen>
 
+    <dimen name="settings_item_height">60dp</dimen>
 </resources>

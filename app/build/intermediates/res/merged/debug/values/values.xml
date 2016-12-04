@@ -579,6 +579,7 @@
     <dimen name="radio_group_height">25dp</dimen>
     <dimen name="radio_group_text_size">14sp</dimen>
     <dimen name="radio_group_width">130dp</dimen>
+    <dimen name="settings_item_height">60dp</dimen>
     <dimen name="time_picker_bar_height">36dp</dimen>
     <dimen name="view_pager_height">249dp</dimen>
     <dimen name="wave_view_diameter">90dp</dimen>

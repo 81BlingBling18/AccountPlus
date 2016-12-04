@@ -15,6 +15,11 @@ import butterknife.OnClick;
 
 public class SetBudgetActivity extends AppCompatActivity {
 
+
+    @OnClick({R.id.back_image, R.id.back_text})
+    public void onBackClick() {
+        onBackPressed();
+    }
     @BindView(R.id.input_budget)EditText budget;
 
     @OnClick(R.id.save)
@@ -34,5 +39,8 @@ public class SetBudgetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.set_budget_activity);
         ButterKnife.bind(this);
+        SharedPreferences sharedPreferences = getSharedPreferences("budget", MODE_PRIVATE);
+        float number = sharedPreferences.getFloat("budget",0);
+        budget.setText(number + "");
     }
 }

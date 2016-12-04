@@ -45,9 +45,6 @@ import butterknife.OnClick;
 import static android.content.Context.MODE_PRIVATE;
 import static android.view.View.GONE;
 
-/**
- * Created by qimeng on 16-11-12.
- */
 
 public class DetailFragment extends Fragment {
 
@@ -107,9 +104,10 @@ public class DetailFragment extends Fragment {
         SharedPreferences sharedPreferences = AccountPlusApp
                 .getInstance()
                 .getSharedPreferences("budget", MODE_PRIVATE);
+        double percentage = DatabaseHelper.getMonthOutcome(mYear, mMonth) / sharedPreferences.getFloat("budget", 0);
         budget.setMax(100);
-        budget.setProgress(100 - (int)(100*(DatabaseHelper.getMonthOutcome(mYear, mMonth) / sharedPreferences.getFloat("budget", 0))
-        ));
+        budget.setProgress((int)(100 - 100*percentage));
+        remainedBudget.setText(sharedPreferences.getFloat("budget", 0) - DatabaseHelper.getMonthOutcome(mYear, mMonth) + "");
 //        for (int i = 0;i<3;i++) {
 //            item = new AccountItem(AccountPlusApp.TYPE_INCOME,"写作业",20,"好想写作业啊"
 //                    , 2016,10,22, i,R.drawable.button_bag);

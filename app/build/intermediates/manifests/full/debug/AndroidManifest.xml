@@ -37,6 +37,7 @@
         <activity android:name="com.happycoding.uniquehust.accountplus.details.PasswordProtection" />
         <activity android:name="com.happycoding.uniquehust.accountplus.details.FeedBackActivity" />
         <activity android:name="com.happycoding.uniquehust.accountplus.details.SetBudgetActivity" />
+        <activity android:name="com.happycoding.uniquehust.accountplus.details.RemindKeepAccountsActivity" />
 
         <receiver
             android:name="com.happycoding.uniquehust.accountplus.smsService.SmsReceiver"
@@ -45,6 +46,22 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+        <receiver android:name="com.happycoding.uniquehust.accountplus.widget.TestWidgetReceiver" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_setting" />
+        </receiver>
+        <receiver android:name="com.happycoding.uniquehust.accountplus.RemindKeepAccountsService.RemindKeepAccountsReceiver" >
+            <intent-filter android:priority="476632982" >
+                <action android:name="ELITOR_CLOCK" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.happycoding.uniquehust.accountplus.details.SuccessInformActivity" />
     </application>
 
 </manifest>

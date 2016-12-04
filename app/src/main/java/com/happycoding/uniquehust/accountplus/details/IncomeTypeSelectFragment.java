@@ -18,14 +18,6 @@ import org.greenrobot.eventbus.EventBus;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link IncomeTypeSelectFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link IncomeTypeSelectFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class IncomeTypeSelectFragment extends Fragment {
 
     public static class MessageEvent2 {

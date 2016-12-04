@@ -36,9 +36,6 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class GraphFragment extends Fragment {
 
     public static final String TAG = "GraphFragment";
@@ -160,7 +157,7 @@ public class GraphFragment extends Fragment {
         l.setYEntrySpace(0f);//设置tab之间Y轴方向上的空白间距值
         l.setYOffset(0f);
 
-        graphList.setAdapter(new GraphListAdapter());
+        graphList.setAdapter(new GraphListAdapter(mYear, mMonth));
 
         return view;
     }
